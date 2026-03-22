@@ -1,0 +1,5 @@
+backend/.env
+backend/.env.example
+backend/__pycache__/
+backend/sessions/
+frontend/node_modules/
