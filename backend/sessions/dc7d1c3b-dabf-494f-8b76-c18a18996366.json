@@ -1,0 +1,87 @@
+{
+  "session_id": "dc7d1c3b-dabf-494f-8b76-c18a18996366",
+  "disease": {
+    "id": "infeccion_urinaria",
+    "name": "Infección del tracto urinario (ITU)",
+    "category": "Infectología",
+    "symptoms": [
+      "disuria (ardor o dolor al orinar)",
+      "polaquiuria (orinar frecuente pero en poca cantidad)",
+      "urgencia miccional (necesidad imperiosa de orinar)",
+      "orina turbia, de mal olor o con sangre (hematuria)",
+      "dolor o presión suprapúbica",
+      "fiebre y escalofríos (sugiere pielonefritis)",
+      "dolor lumbar o en flanco (pielonefritis alta)",
+      "náuseas y vómitos (pielonefritis)"
+    ],
+    "typical_lab_results": {
+      "Examen de orina (sedimento)": "Leucocitos 3+, nitritos positivos, hematíes 2+, bacterias ++",
+      "Urocultivo": "Escherichia coli >100,000 UFC/mL (uropatógeno más común: 80%)",
+      "Antibiograma": "Sensible a: nitrofurantoína, fosfomicina, TMP-SMX. Resistente a: ampicilina",
+      "Leucocitos en sangre": "12,800/µL (leucocitosis moderada)",
+      "PCR": "3.2 mg/dL (elevada; normal: <1.0 mg/dL)",
+      "Creatinina": "0.9 mg/dL (normal — no hay compromiso renal)",
+      "Hemograma": "Neutrofilia (75%)",
+      "Ecografía renal y vesical": "Sin litiasis, sin obstrucción, vejiga con residuo postmiccional mínimo"
+    },
+    "differential_diagnoses": [
+      "Uretritis por infección de transmisión sexual (ITS)",
+      "Vaginitis o cervicitis (en mujeres)",
+      "Prostatitis aguda (en hombres)",
+      "Cálculo ureteral (cólico nefrítico)",
+      "Vejiga hiperactiva"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Siente ardor o dolor al orinar?",
+        "¿Orina con más frecuencia de lo habitual pero en poca cantidad?",
+        "¿Siente necesidad urgente de orinar que no puede controlar?",
+        "¿Ha notado sangre en la orina?",
+        "¿Tiene dolor en la parte baja del abdomen o en la espalda/flancos?",
+        "¿Tiene fiebre o escalofríos? (indica compromiso renal)",
+        "¿Ha tenido relaciones sexuales recientes?",
+        "¿Ha tenido infecciones urinarias anteriormente? ¿Con qué frecuencia?",
+        "¿Está embarazada? (en mujeres)",
+        "¿Tiene diabetes, cálculos renales o malformaciones urinarias conocidas?"
+      ],
+      "key_labs": [
+        "Examen de orina completo (sedimento urinario)",
+        "Urocultivo con antibiograma",
+        "Hemograma completo",
+        "PCR",
+        "Creatinina",
+        "Ecografía renal y vesical"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Infección del tracto urinario (ITU)",
+        "required_symptoms": [
+          "disuria",
+          "polaquiuria"
+        ],
+        "required_labs": [
+          "Examen de orina completo",
+          "Urocultivo con antibiograma"
+        ],
+        "key_reasoning": "Urocultivo ≥100,000 UFC/mL del uropatógeno + síntomas clínicos; distinguir ITU baja (cistitis) de alta (pielonefritis) por fiebre y dolor lumbar; guiar antibiótico según antibiograma"
+      }
+    }
+  },
+  "patient_profile": {
+    "name": "Carmen Díaz Vargas",
+    "age": 29,
+    "sex": "femenino",
+    "weight": 85,
+    "height": 167,
+    "backstory": "Me llamo Valeria, tengo 29 años y vengo porque desde hace unos tres días siento una molestia muy incómoda en la parte baja del vientre, como una presión que no se me quita, y cada vez que voy al baño es un martirio. Trabajo en una oficina donde paso muchas horas sentada y la verdad es que tomo muy poca agua, a veces me doy cuenta de que llevo medio día sin tomar ni un vaso. Mi mamá siempre ha tenido problemas de los riñones y yo la verdad nunca le había dado importancia a eso hasta ahora que me siento así de mal. Además, hace poco empecé a tomar anticonceptivos y no sé si eso tenga algo que ver, pero lo que sí sé es que ya no aguanto la molestia y por eso decidí venir."
+  },
+  "conversation": [],
+  "labs_requested": [],
+  "lab_results": {},
+  "diagnosis_submitted": false,
+  "score": null,
+  "student_diagnosis": null,
+  "student_reasoning": null,
+  "created_at": "2026-03-22T00:34:44.191540",
+  "completed_at": null,
+  "status": "active"
+}

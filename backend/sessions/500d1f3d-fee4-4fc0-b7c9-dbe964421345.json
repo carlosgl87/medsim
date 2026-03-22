@@ -1,0 +1,93 @@
+{
+  "session_id": "500d1f3d-fee4-4fc0-b7c9-dbe964421345",
+  "disease": {
+    "id": "meningitis_bacteriana",
+    "name": "Meningitis bacteriana",
+    "category": "Infectología",
+    "symptoms": [
+      "cefalea intensa de inicio súbito ('la peor de mi vida')",
+      "fiebre alta (>39°C)",
+      "rigidez de nuca (meningismo) — no puede doblar el cuello hacia adelante",
+      "fotofobia (no tolera la luz)",
+      "fonofobia (no tolera el ruido)",
+      "náuseas y vómitos en proyectil",
+      "alteración del nivel de conciencia (confusión, somnolencia)",
+      "petequias o púrpura no blanqueable en piel (meningococo — signo de alarma)",
+      "signo de Kernig positivo",
+      "signo de Brudzinski positivo",
+      "convulsiones (en casos graves)"
+    ],
+    "typical_lab_results": {
+      "LCR — Aspecto": "Turbio, purulento (normal: cristal de roca)",
+      "LCR — Glucosa": "22 mg/dL (muy baja; normal: >50% de la glucemia = >40 mg/dL)",
+      "LCR — Proteínas": "310 mg/dL (muy elevadas; normal: 15–45 mg/dL)",
+      "LCR — Células (citología)": "9,200 células/µL (>90% polimorfonucleares — infección bacteriana)",
+      "LCR — Cultivo": "Neisseria meningitidis serogrupo B",
+      "LCR — PCR bacteriana": "Positivo para N. meningitidis",
+      "Leucocitos en sangre": "24,500/µL (leucocitosis severa)",
+      "PCR sérica": "35 mg/dL (muy elevada)",
+      "Procalcitonina": "18 ng/mL (muy elevada)",
+      "TAC craneal": "Sin lesión focal ni hidrocefalia (indicación previa a punción lumbar si hay focalidad)"
+    },
+    "differential_diagnoses": [
+      "Meningitis viral (encefalitis)",
+      "Hemorragia subaracnoidea",
+      "Absceso cerebral",
+      "Meningitis tuberculosa",
+      "Encefalitis herpética"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿El dolor de cabeza fue de inicio súbito e intensísimo?",
+        "¿Puede doblar el cuello hacia adelante sin dolor?",
+        "¿Tiene mucha sensibilidad a la luz o al ruido?",
+        "¿Está confuso o desorientado?",
+        "¿Ha tenido convulsiones?",
+        "¿Tiene manchas rojas o moradas en la piel que no desaparecen al presionarlas?",
+        "¿Ha estado en contacto con casos de meningitis?",
+        "¿Ha recibido la vacuna antimeningocócica?",
+        "¿Tiene inmunosupresión o asplenia?"
+      ],
+      "key_labs": [
+        "Punción lumbar con análisis completo de LCR (URGENTE)",
+        "Cultivo y Gram de LCR",
+        "PCR bacteriana en LCR",
+        "Hemograma completo",
+        "PCR y Procalcitonina sérica",
+        "Hemocultivos (x2 antes de antibióticos)",
+        "TAC craneal (si hay signos de focalidad, antes de la punción)"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Meningitis bacteriana",
+        "required_symptoms": [
+          "cefalea intensa",
+          "fiebre",
+          "rigidez de nuca"
+        ],
+        "required_labs": [
+          "Punción lumbar con análisis de LCR",
+          "Cultivo de LCR"
+        ],
+        "key_reasoning": "Tríada clásica (fiebre + rigidez de nuca + alteración mental) + LCR purulento con glucosa baja, proteínas altas y pleocitosis neutrofílica; emergencia médica, antibióticos inmediatos"
+      }
+    }
+  },
+  "patient_profile": {
+    "name": "Manuel Jiménez Vargas",
+    "age": 68,
+    "sex": "masculino",
+    "weight": 62,
+    "height": 187,
+    "backstory": "Me llamo Roberto, tengo 68 años y vengo porque desde hace dos días tengo un dolor de cabeza espantoso que no se me quita con nada, además me dio una fiebre altísima y siento el cuello tan tieso que casi no puedo mirar para abajo. Mi hijo me trajo porque anoche me encontró medio confundido, hablando cosas sin sentido, y la verdad es que la luz me molesta muchísimo, no aguanto ni la lámpara del cuarto. Hace como una semana me sacaron una muela que tenía infectada y me quedó la cara bastante hinchada unos días, y además soy diabético desde hace como quince años, así que mi cuerpo no anda muy fuerte que digamos para defenderse."
+  },
+  "conversation": [],
+  "labs_requested": [],
+  "lab_results": {},
+  "diagnosis_submitted": false,
+  "score": null,
+  "student_diagnosis": null,
+  "student_reasoning": null,
+  "created_at": "2026-03-22T01:33:39.881151",
+  "completed_at": null,
+  "status": "active"
+}

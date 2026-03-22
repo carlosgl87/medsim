@@ -1,0 +1,87 @@
+{
+  "session_id": "c069dc86-c90a-46e3-99ee-3c2f0c53135e",
+  "disease": {
+    "id": "malaria",
+    "name": "Malaria (Paludismo)",
+    "category": "Infectología",
+    "symptoms": [
+      "fiebre en picos regulares: frío-calor-sudor, cada 48h (P. vivax/ovale) o 72h (P. malariae)",
+      "escalofríos intensos (fase fría) que duran 15–60 minutos",
+      "fiebre alta (40–41°C) en fase caliente",
+      "sudoración profusa con sensación de mejoría transitoria",
+      "cefalea intensa",
+      "mialgia y artralgia intensas",
+      "náuseas y vómitos",
+      "esplenomegalia dolorosa (bazo agrandado)",
+      "anemia e ictericia leve (por hemólisis de glóbulos rojos)"
+    ],
+    "typical_lab_results": {
+      "Gota gruesa y frotis de sangre periférica": "Plasmodium vivax: trofozoítos en anillo y ameboides ++, esquizontes; glóbulos rojos agrandados con punteado de Schüffner",
+      "Test de diagnóstico rápido (RDT)": "Positivo para Plasmodium no-falciparum",
+      "PCR para Plasmodium": "Positivo, especie P. vivax confirmada",
+      "Hemoglobina": "9.5 g/dL (anemia moderada por hemólisis)",
+      "Plaquetas": "88,000/µL (trombocitopenia)",
+      "Bilirrubina total": "3.2 mg/dL (elevada; hemólisis)",
+      "LDH": "520 U/L (elevada; hemólisis)",
+      "Hematocrito": "30% (bajo)",
+      "Creatinina": "1.0 mg/dL (normal — sin malaria complicada)"
+    },
+    "differential_diagnoses": [
+      "Dengue",
+      "Fiebre tifoidea",
+      "Leptospirosis",
+      "Sepsis bacteriana",
+      "Anemia hemolítica autoinmune"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿La fiebre aparece en episodios regulares, con escalofríos seguidos de fiebre alta y luego sudoración?",
+        "¿Ha viajado o vive en zonas endémicas de malaria (Amazonía, África, Asia tropical)?",
+        "¿Fue picado por mosquitos en esa zona?",
+        "¿Ha tenido malaria anteriormente?",
+        "¿Tomó profilaxis antipalúdica al viajar?",
+        "¿Tiene dolor o inflamación en el lado izquierdo del abdomen (bazo)?",
+        "¿Ha notado coloración amarilla en los ojos o la piel?",
+        "¿Con qué exacta frecuencia repiten los episodios febriles?"
+      ],
+      "key_labs": [
+        "Gota gruesa y frotis de sangre periférica (estándar de oro)",
+        "Test de diagnóstico rápido para malaria (RDT)",
+        "PCR para Plasmodium (identificación de especie)",
+        "Hemograma completo",
+        "Bilirrubinas y LDH (hemólisis)",
+        "Función renal (complicaciones)"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Malaria",
+        "required_symptoms": [
+          "fiebre en picos con escalofríos",
+          "antecedente de zona endémica"
+        ],
+        "required_labs": [
+          "Gota gruesa y frotis de sangre periférica",
+          "Test de diagnóstico rápido (RDT)"
+        ],
+        "key_reasoning": "Gota gruesa positiva o RDT positivo en paciente con fiebre episódica de zona endémica; identificar especie para definir tratamiento (cloroquina + primaquina para P. vivax)"
+      }
+    }
+  },
+  "patient_profile": {
+    "name": "Beatriz Rivera Pérez",
+    "age": 63,
+    "sex": "femenino",
+    "weight": 97,
+    "height": 175,
+    "backstory": "Buenas tardes, doctor. Mire, yo llegué hace como diez días de un viaje a África, fui a visitar a una sobrina que vive en Nigeria, y desde hace unos cuatro días me empezaron unos escalofríos horribles que me dan y me quitan, con unas fiebres altísimas que me empapan la cama de sudor y luego se me pasan, y así voy todo el día, un rato bien y un rato temblando. Me siento agotada, me duele todo el cuerpo, sobre todo la cabeza, y ayer mi hija me dijo que me veía los ojos un poco amarillentos. La verdad es que no tomé ninguna pastilla especial antes del viaje porque una amiga me dijo que no hacía falta, y ahora estoy preocupada porque mi mamá, que en paz descanse, era diabética y del corazón, y yo con este sobrepeso que cargo no quiero que se me complique nada."
+  },
+  "conversation": [],
+  "labs_requested": [],
+  "lab_results": {},
+  "diagnosis_submitted": false,
+  "score": null,
+  "student_diagnosis": null,
+  "student_reasoning": null,
+  "created_at": "2026-03-22T01:30:28.246108",
+  "completed_at": null,
+  "status": "active"
+}

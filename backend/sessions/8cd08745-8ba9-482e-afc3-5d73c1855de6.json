@@ -1,0 +1,90 @@
+{
+  "session_id": "8cd08745-8ba9-482e-afc3-5d73c1855de6",
+  "disease": {
+    "id": "tuberculosis_pulmonar",
+    "name": "Tuberculosis pulmonar",
+    "category": "Infectología",
+    "symptoms": [
+      "tos crónica de más de 2–3 semanas de evolución",
+      "expectoración con sangre (hemoptisis) o esputo herrumbroso",
+      "fiebre vespertina (generalmente por las tardes)",
+      "sudoración nocturna profusa",
+      "pérdida de peso significativa e involuntaria",
+      "fatiga crónica y astenia",
+      "disnea progresiva",
+      "dolor torácico pleurítico",
+      "adenopatías cervicales palpables"
+    ],
+    "typical_lab_results": {
+      "Baciloscopia de esputo (BAAR) — 1a muestra": "Positivo 2+",
+      "Baciloscopia de esputo (BAAR) — 2a muestra": "Positivo 1+",
+      "Cultivo en medio Löwenstein-Jensen": "Mycobacterium tuberculosis (resultado en 4–8 semanas)",
+      "PCR/Xpert MTB-RIF (GeneXpert)": "M. tuberculosis detectado; sin resistencia a rifampicina",
+      "Prueba de tuberculina (PPD)": "18 mm de induración (positivo; >10 mm en inmunocompetentes)",
+      "Radiografía de tórax": "Infiltrados fibronodulares apicales, cavitación en lóbulo superior derecho",
+      "VIH (prueba rápida)": "Negativo",
+      "VSG": "105 mm/h (muy elevada)",
+      "Hemograma": "Anemia normocítica leve, linfocitosis relativa",
+      "LDH": "420 U/L (elevada)"
+    },
+    "differential_diagnoses": [
+      "Neumonía bacteriana o atípica",
+      "Cáncer de pulmón",
+      "Sarcoidosis",
+      "Histoplasmosis",
+      "Absceso pulmonar"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Hace cuánto tiempo tiene tos? ¿Ha tosido sangre?",
+        "¿Tiene fiebre, especialmente por las tardes o noches?",
+        "¿Suda mucho de noche, empapando la ropa o las sábanas?",
+        "¿Ha perdido peso sin estar a dieta? ¿Cuántos kilos?",
+        "¿Ha estado en contacto con alguien diagnosticado con tuberculosis?",
+        "¿Vive en condiciones de hacinamiento?",
+        "¿Es VIH positivo o tiene alguna condición que afecte su sistema inmune?",
+        "¿Ha tenido tuberculosis anteriormente? ¿Recibió tratamiento completo?",
+        "¿Trabaja en hospital, prisión o albergue?"
+      ],
+      "key_labs": [
+        "Baciloscopia de esputo (BAAR) x2–3 muestras",
+        "PCR/Xpert MTB-RIF (GeneXpert)",
+        "Cultivo de esputo para micobacterias",
+        "Radiografía de tórax",
+        "PPD (prueba de tuberculina) o IGRA",
+        "Prueba de VIH"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Tuberculosis pulmonar",
+        "required_symptoms": [
+          "tos crónica >2 semanas",
+          "sudoración nocturna",
+          "pérdida de peso"
+        ],
+        "required_labs": [
+          "Baciloscopia de esputo (BAAR)",
+          "Radiografía de tórax"
+        ],
+        "key_reasoning": "BAAR positivo en esputo o GeneXpert positivo con cuadro clínico compatible; notificación obligatoria y inicio de DOTS (tratamiento directamente observado)"
+      }
+    }
+  },
+  "patient_profile": {
+    "name": "Fernando Herrera Flores",
+    "age": 25,
+    "sex": "masculino",
+    "weight": 93,
+    "height": 172,
+    "backstory": "Me llamo Carlos y vengo porque llevo como tres semanas con una tos que no se me quita por nada, a veces hasta me sale un poco de sangre y en las noches me despierto empapado en sudor, como si me hubieran echado un balde de agua. He bajado bastante de peso sin hacer dieta ni nada, la ropa me queda más floja y me siento cansado todo el día. Vivo en un cuarto pequeño con otros cuatro compañeros porque trabajo en construcción y ahorramos entre todos, y uno de ellos estuvo bastante enfermo de los pulmones hace unos meses pero nunca fue al doctor."
+  },
+  "conversation": [],
+  "labs_requested": [],
+  "lab_results": {},
+  "diagnosis_submitted": false,
+  "score": null,
+  "student_diagnosis": null,
+  "student_reasoning": null,
+  "created_at": "2026-03-22T01:30:27.044000",
+  "completed_at": null,
+  "status": "active"
+}

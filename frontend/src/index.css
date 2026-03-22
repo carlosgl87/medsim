@@ -1,0 +1,81 @@
+/*
+ * Estilos globales de la aplicación
+ * ===================================
+ * Este archivo es el punto de entrada CSS. Vite lo importa desde main.jsx.
+ *
+ * Las tres directivas @tailwind son OBLIGATORIAS para que Tailwind funcione:
+ * - base:       resets/normalización (equivale a normalize.css)
+ * - components: estilos de clases de componentes (usadas con @apply)
+ * - utilities:  todas las clases utilitarias (bg-*, text-*, p-*, etc.)
+ *
+ * PostCSS procesa estas directivas y las reemplaza con el CSS real.
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Capa @layer base: sobrescribe o extiende los estilos base de Tailwind.
+ * Aquí definimos estilos globales que aplican a toda la app.
+ *
+ * @layer le dice a Tailwind en qué "capa" del CSS va este código,
+ * lo que garantiza el orden correcto de especificidad CSS.
+ */
+@layer base {
+  /* Aplicar Inter como fuente base a todo el documento.
+     font-feature-settings: activa ligaduras y otras características tipográficas
+     de la fuente Inter para mejor legibilidad. */
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  /* Fondo blanco y texto oscuro para toda la app — estilo médico limpio */
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+    /* antialiased: suaviza el renderizado de fuentes en pantallas de alta densidad */
+  }
+}
+
+/*
+ * Capa @layer components: clases reutilizables creadas con @apply.
+ * @apply combina múltiples clases de Tailwind en una sola clase personalizada.
+ * Úsalas cuando el mismo patrón de clases se repite muchas veces.
+ *
+ * Analogía Python: es como definir una función helper que combina
+ * varias operaciones frecuentes en una sola llamada.
+ */
+@layer components {
+  /* Botón primario: navy oscuro con hover effect */
+  .btn-primary {
+    @apply bg-navy-800 text-white font-medium px-4 py-2 rounded-lg
+           hover:bg-navy-900 active:scale-95
+           transition-all duration-200 ease-in-out
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Botón secundario: contorno teal */
+  .btn-secondary {
+    @apply border-2 border-teal-500 text-teal-600 font-medium px-4 py-2 rounded-lg
+           hover:bg-teal-50 active:scale-95
+           transition-all duration-200 ease-in-out
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Tarjeta (card): contenedor blanco con sombra sutil — patrón muy común en UIs médicas */
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6;
+  }
+
+  /* Badge de estado: pastilla colorida para indicar estados (activo, completado, etc.) */
+  .badge-success {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+           bg-teal-100 text-teal-800;
+  }
+
+  .badge-info {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+           bg-blue-100 text-blue-800;
+  }
+}

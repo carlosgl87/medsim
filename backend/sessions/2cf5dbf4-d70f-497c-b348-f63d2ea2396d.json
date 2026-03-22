@@ -1,0 +1,92 @@
+{
+  "session_id": "2cf5dbf4-d70f-497c-b348-f63d2ea2396d",
+  "disease": {
+    "id": "lupus_eritematoso",
+    "name": "Lupus eritematoso sistémico",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "eritema en alas de mariposa (rash malar en mejillas y nariz)",
+      "fotosensibilidad (brotes al exponerse al sol)",
+      "úlceras orales indoloras",
+      "artritis no erosiva en múltiples articulaciones",
+      "serositis: pleuritis (dolor al respirar) o pericarditis",
+      "afectación renal (edema, hipertensión, orina espumosa)",
+      "fatiga intensa y fiebre sin foco claro",
+      "alopecia (caída del cabello)",
+      "fenómeno de Raynaud (dedos que se tornan blancos o azules con el frío)"
+    ],
+    "typical_lab_results": {
+      "ANA (Anticuerpos antinucleares)": "Positivo 1:640 (diagnósticamente significativo; normal: negativo)",
+      "Anti-dsDNA (anti-DNA doble cadena)": "Positivo, 168 UI/mL (muy elevado; normal: <10 UI/mL)",
+      "Anti-Smith (Anti-Sm)": "Positivo (altamente específico para LES)",
+      "Complemento C3": "58 mg/dL (bajo; normal: 90–180 mg/dL)",
+      "Complemento C4": "7 mg/dL (bajo; normal: 16–47 mg/dL)",
+      "Hemoglobina": "10.2 g/dL (anemia hemolítica)",
+      "Leucocitos": "2,900/µL (leucopenia; normal: 4,500–11,000)",
+      "Plaquetas": "88,000/µL (trombocitopenia; normal: 150,000–400,000)",
+      "Proteinuria en orina 24h": "2.5 g/24h (nefritis lúpica)",
+      "VSG": "98 mm/h (muy elevada)"
+    },
+    "differential_diagnoses": [
+      "Artritis reumatoide",
+      "Síndrome de Sjögren",
+      "Dermatomiositis",
+      "Enfermedad mixta del tejido conectivo",
+      "Vasculitis sistémica"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Tiene erupciones en la cara, especialmente con forma de mariposa en mejillas y nariz?",
+        "¿La piel le reacciona con manchas o ronchas al exponerse al sol?",
+        "¿Tiene llagas en la boca o nariz con frecuencia?",
+        "¿Ha notado caída excesiva del cabello?",
+        "¿Tiene dolor en múltiples articulaciones?",
+        "¿Ha tenido dolor en el pecho al respirar profundo?",
+        "¿Orina espumoso o ha notado cambios en la orina?",
+        "¿Hay antecedentes familiares de enfermedades autoinmunes?",
+        "¿Es mujer en edad reproductiva?",
+        "¿Los síntomas empeoran con la exposición al sol?"
+      ],
+      "key_labs": [
+        "ANA (Anticuerpos antinucleares)",
+        "Anti-dsDNA",
+        "Anti-Smith",
+        "Complemento C3 y C4",
+        "Hemograma completo",
+        "Función renal y proteinuria",
+        "VSG y PCR"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Lupus eritematoso sistémico",
+        "required_symptoms": [
+          "eritema malar",
+          "fotosensibilidad",
+          "artritis"
+        ],
+        "required_labs": [
+          "ANA",
+          "Anti-dsDNA"
+        ],
+        "key_reasoning": "Diagnóstico con ≥4 de 11 criterios SLICC: ANA positivo, anti-dsDNA, manifestaciones cutáneas, artritis, serositis, nefritis; complemento bajo indica actividad"
+      }
+    }
+  },
+  "patient_profile": {
+    "name": "Carlos López Rivera",
+    "age": 18,
+    "sex": "masculino",
+    "weight": 100,
+    "height": 162,
+    "backstory": "Me llamo Diego, tengo 18 años y vengo porque desde hace como dos meses me siento súper cansado todo el tiempo, me duelen las articulaciones de las manos y las rodillas al punto que a veces no puedo ni agarrar bien el control del videojuego, y hace poco me salió un sarpullido raro en la cara que se me pone peor cuando salgo al sol. Mi mamá tiene artritis y a una tía le diagnosticaron algo de los riñones cuando era joven, pero la verdad no sé bien qué era. También he notado que se me cae bastante el pelo y a veces me da fiebre sin estar resfriado ni nada, y la verdad he subido de peso porque con tanto malestar casi no me muevo y como pura comida chatarra."
+  },
+  "conversation": [],
+  "labs_requested": [],
+  "lab_results": {},
+  "diagnosis_submitted": false,
+  "score": null,
+  "student_diagnosis": null,
+  "student_reasoning": null,
+  "created_at": "2026-03-22T01:36:03.856777",
+  "completed_at": null,
+  "status": "active"
+}

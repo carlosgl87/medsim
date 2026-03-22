@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- viewport: hace que la app sea responsive en móviles.
+         Sin esto, los móviles hacen zoom-out mostrando la versión desktop. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon médico (estetoscopio) usando emoji como SVG inline.
+         En producción reemplazarías esto con un archivo .ico real. -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩺</text></svg>"
+    />
+
+    <!-- Inter: fuente tipográfica profesional de Google Fonts.
+         Se carga desde CDN — en producción la incluirías localmente para
+         evitar dependencia de internet y mejorar performance. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>MedSim — Simulador Clínico</title>
+  </head>
+  <body>
+    <!-- div#root: punto de montaje de la aplicación React.
+         React renderiza toda la UI dentro de este elemento.
+         Analogía Python/FastAPI: es como el app = FastAPI() — el contenedor raíz.
+
+         Antes de que React cargue, el div está vacío. React lo "toma"
+         y lo rellena con los componentes JSX. -->
+    <div id="root"></div>
+
+    <!-- type="module": le dice al navegador que este script usa ES modules (import/export).
+         Vite transpila main.jsx y lo sirve como módulo ES nativo en desarrollo.
+         src/main.jsx es el punto de entrada de la aplicación React. -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

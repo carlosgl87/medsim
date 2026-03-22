@@ -1,0 +1,1253 @@
+[
+  {
+    "id": "diabetes_tipo2",
+    "name": "Diabetes tipo 2",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "polidipsia (sed excesiva)",
+      "poliuria (orinar frecuente y en gran cantidad)",
+      "polifagia (hambre excesiva)",
+      "pérdida de peso inexplicable",
+      "fatiga y cansancio",
+      "visión borrosa",
+      "cicatrización lenta de heridas",
+      "infecciones frecuentes",
+      "hormigueo o entumecimiento en manos y pies",
+      "piel oscura en pliegues (acantosis nigricans)"
+    ],
+    "typical_lab_results": {
+      "Glucosa en ayunas": "138 mg/dL (elevada; normal: 70–99 mg/dL)",
+      "Hemoglobina glicosilada (HbA1c)": "8.2% (elevada; normal: <5.7%)",
+      "Glucosa postprandial 2h": "215 mg/dL (elevada; normal: <140 mg/dL)",
+      "Colesterol total": "218 mg/dL (levemente elevado; normal: <200 mg/dL)",
+      "Triglicéridos": "195 mg/dL (levemente elevados; normal: <150 mg/dL)",
+      "HDL colesterol": "38 mg/dL (bajo; normal hombre >40, mujer >50 mg/dL)",
+      "Creatinina": "1.0 mg/dL (normal; 0.6–1.2 mg/dL)",
+      "Microalbuminuria": "42 mg/24h (levemente elevada; normal: <30 mg/24h)",
+      "Hemograma completo": "Sin alteraciones significativas",
+      "Examen de orina completo": "Glucosuria +2, sin cetonuria"
+    },
+    "differential_diagnoses": [
+      "Diabetes tipo 1",
+      "Diabetes insípida",
+      "Síndrome de Cushing",
+      "Hipotiroidismo",
+      "Síndrome metabólico"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Tiene sed excesiva o boca seca con frecuencia?",
+        "¿Orina muchas veces al día, incluso de noche?",
+        "¿Ha perdido o aumentado de peso recientemente sin razón clara?",
+        "¿Tiene antecedentes familiares de diabetes?",
+        "¿Ha notado visión borrosa?",
+        "¿Las heridas o rasguños le curan con dificultad?",
+        "¿Tiene hormigueo, ardor o entumecimiento en manos o pies?",
+        "¿Cómo es su dieta y nivel de actividad física?",
+        "¿Tiene o ha tenido infecciones frecuentes (piel, orina, etc.)?",
+        "¿Toma algún medicamento actualmente?"
+      ],
+      "key_labs": [
+        "Glucosa en ayunas",
+        "Hemoglobina glicosilada (HbA1c)",
+        "Glucosa postprandial 2h",
+        "Perfil lipídico (Colesterol, Triglicéridos, HDL, LDL)",
+        "Creatinina y función renal",
+        "Microalbuminuria",
+        "Examen de orina completo"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Diabetes tipo 2",
+        "required_symptoms": ["poliuria", "polidipsia"],
+        "required_labs": ["Glucosa en ayunas", "Hemoglobina glicosilada (HbA1c)"],
+        "key_reasoning": "Hiperglucemia en ayunas ≥126 mg/dL o HbA1c ≥6.5% con síntomas cardinales en paciente adulto con factores de riesgo"
+      }
+    }
+  },
+  {
+    "id": "hipertension_arterial",
+    "name": "Hipertensión arterial",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "cefalea occipital (especialmente matutina)",
+      "visión borrosa o alteraciones visuales",
+      "zumbido en los oídos (tinnitus)",
+      "palpitaciones",
+      "fatiga",
+      "mareos",
+      "epistaxis (sangrado nasal)",
+      "disnea de esfuerzo",
+      "frecuentemente asintomático ('asesino silencioso')"
+    ],
+    "typical_lab_results": {
+      "Presión arterial": "162/98 mmHg (elevada; normal: <120/80 mmHg)",
+      "Creatinina": "1.2 mg/dL (límite superior normal; 0.6–1.2 mg/dL)",
+      "Potasio sérico": "3.7 mEq/L (normal; 3.5–5.0 mEq/L)",
+      "Sodio sérico": "142 mEq/L (normal; 135–145 mEq/L)",
+      "Colesterol LDL": "148 mg/dL (elevado; normal: <130 mg/dL)",
+      "Glucosa en ayunas": "105 mg/dL (prediabetes; normal: 70–99 mg/dL)",
+      "Hemograma completo": "Sin alteraciones significativas",
+      "Electrocardiograma (ECG)": "Hipertrofia ventricular izquierda leve",
+      "Examen de orina completo": "Microalbuminuria leve",
+      "Ecocardiograma": "Hipertrofia concéntrica leve del ventrículo izquierdo"
+    },
+    "differential_diagnoses": [
+      "Hipertensión secundaria a enfermedad renal crónica",
+      "Hiperaldosteronismo primario",
+      "Feocromocitoma",
+      "Hipertensión renovascular",
+      "Apnea obstructiva del sueño"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Tiene dolores de cabeza frecuentes, especialmente al levantarse?",
+        "¿Ha medido su presión arterial antes? ¿Qué valores ha obtenido?",
+        "¿Tiene antecedentes familiares de hipertensión, infarto o derrame?",
+        "¿Consume mucha sal en su dieta?",
+        "¿Fuma o consume alcohol con frecuencia?",
+        "¿Realiza actividad física regularmente?",
+        "¿Tiene mucho estrés laboral o personal?",
+        "¿Toma algún medicamento actualmente (anticonceptivos, antiinflamatorios)?",
+        "¿Ha tenido problemas de riñón o de tiroides?",
+        "¿Tiene sangrado nasal o hemorragias frecuentes?"
+      ],
+      "key_labs": [
+        "Medición de presión arterial (dos tomas)",
+        "Electrocardiograma (ECG)",
+        "Función renal (Creatinina, BUN)",
+        "Electrolitos (Sodio, Potasio)",
+        "Perfil lipídico",
+        "Glucosa en ayunas",
+        "Examen de orina completo",
+        "Ecocardiograma"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Hipertensión arterial",
+        "required_symptoms": ["cefalea", "presión arterial elevada en consulta"],
+        "required_labs": ["Medición de presión arterial", "Función renal"],
+        "key_reasoning": "Presión arterial ≥140/90 mmHg en dos mediciones diferentes, con o sin síntomas, descartando causas secundarias"
+      }
+    }
+  },
+  {
+    "id": "hipotiroidismo",
+    "name": "Hipotiroidismo",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "fatiga intensa y somnolencia",
+      "intolerancia al frío",
+      "aumento de peso sin cambio en la dieta",
+      "estreñimiento crónico",
+      "piel seca y áspera",
+      "cabello frágil y caída del cabello",
+      "bradicardia (pulso lento)",
+      "depresión o ánimo bajo",
+      "voz ronca",
+      "edema facial (especialmente párpados) — mixedema",
+      "menstruación irregular o abundante (en mujeres)"
+    ],
+    "typical_lab_results": {
+      "TSH (hormona estimulante de tiroides)": "14.8 mIU/L (muy elevada; normal: 0.4–4.0 mIU/L)",
+      "T4 libre (tiroxina libre)": "0.5 ng/dL (baja; normal: 0.8–1.8 ng/dL)",
+      "T3 libre": "2.0 pg/mL (baja; normal: 2.3–4.2 pg/mL)",
+      "Anticuerpos anti-TPO": "420 IU/mL (muy elevados; normal: <35 IU/mL)",
+      "Anticuerpos anti-tiroglobulina": "Positivos",
+      "Colesterol total": "248 mg/dL (elevado; normal: <200 mg/dL)",
+      "Hemoglobina": "11.2 g/dL (anemia leve; normal mujer: 12–16 g/dL)",
+      "Hemograma completo": "Anemia normocítica leve",
+      "Glucosa en ayunas": "95 mg/dL (normal)",
+      "Creatinina": "0.9 mg/dL (normal)"
+    },
+    "differential_diagnoses": [
+      "Depresión",
+      "Anemia ferropénica",
+      "Insuficiencia suprarrenal",
+      "Síndrome de fatiga crónica",
+      "Diabetes mellitus"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Se siente cansado o con sueño la mayor parte del tiempo?",
+        "¿Ha aumentado de peso sin comer más de lo habitual?",
+        "¿Siente frío con más frecuencia que otras personas?",
+        "¿Ha notado cambios en su piel (seca, áspera) o en su cabello (frágil, cae más)?",
+        "¿Tiene estreñimiento frecuente?",
+        "¿Ha notado que su voz se ha vuelto más ronca?",
+        "¿Tiene antecedentes familiares de enfermedades de la tiroides?",
+        "¿Ha tenido problemas de tiroides anteriormente?",
+        "¿Está deprimido o con el ánimo bajo?",
+        "¿Sus ciclos menstruales han cambiado? (en mujeres)"
+      ],
+      "key_labs": [
+        "TSH (hormona estimulante de tiroides)",
+        "T4 libre",
+        "T3 libre",
+        "Anticuerpos anti-TPO",
+        "Hemograma completo",
+        "Perfil lipídico"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Hipotiroidismo",
+        "required_symptoms": ["fatiga", "intolerancia al frío", "aumento de peso"],
+        "required_labs": ["TSH", "T4 libre"],
+        "key_reasoning": "TSH elevada con T4 libre baja confirma hipotiroidismo primario; anticuerpos anti-TPO positivos sugieren etiología autoinmune (Hashimoto)"
+      }
+    }
+  },
+  {
+    "id": "anemia_ferropenica",
+    "name": "Anemia ferropénica",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "fatiga y debilidad generalizada",
+      "palidez cutánea y de mucosas (conjuntivas, palmas)",
+      "disnea de esfuerzo",
+      "palpitaciones o taquicardia",
+      "cefalea",
+      "mareos o vértigo",
+      "uñas frágiles o en forma de cuchara (coiloniquia)",
+      "glositis (lengua inflamada y lisa)",
+      "queilitis angular (fisuras en comisuras de los labios)",
+      "pica (deseo de comer hielo, tierra, arcilla)"
+    ],
+    "typical_lab_results": {
+      "Hemoglobina": "9.2 g/dL (baja; normal mujer: 12–16 g/dL, hombre: 13.5–17.5 g/dL)",
+      "Hematocrito": "29% (bajo; normal: 36–54%)",
+      "VCM (Volumen Corpuscular Medio)": "70 fL (bajo — microcítica; normal: 80–100 fL)",
+      "HCM (Hemoglobina Corpuscular Media)": "22 pg (bajo — hipocrómica; normal: 27–33 pg)",
+      "Ferritina sérica": "5 ng/mL (muy baja; normal: 12–300 ng/mL)",
+      "Hierro sérico": "38 µg/dL (bajo; normal: 60–170 µg/dL)",
+      "TIBC (Capacidad total de unión al hierro)": "490 µg/dL (elevada; normal: 250–370 µg/dL)",
+      "Saturación de transferrina": "8% (baja; normal: 20–50%)",
+      "Reticulocitos": "0.8% (bajo-normal)",
+      "Leucocitos y plaquetas": "Normales"
+    },
+    "differential_diagnoses": [
+      "Anemia por enfermedad crónica",
+      "Talasemia menor",
+      "Anemia sideroblástica",
+      "Deficiencia de vitamina B12 o ácido fólico",
+      "Anemia hemolítica"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Se cansa fácilmente con actividades que antes toleraba bien?",
+        "¿Ha notado palidez en su piel, encías o el interior de los párpados?",
+        "¿Tiene menstruaciones abundantes o prolongadas? (en mujeres)",
+        "¿Ha presentado sangrado digestivo (heces negras, sangre en heces o vómitos)?",
+        "¿Cómo es su dieta? ¿Consume carne roja, legumbres?",
+        "¿Ha tenido embarazos recientes?",
+        "¿Siente latidos del corazón fuertes o acelerados?",
+        "¿Tiene deseos de comer hielo, tierra u otras sustancias no alimenticias?",
+        "¿Ha notado cambios en sus uñas (frágiles, con forma de cuchara)?",
+        "¿Tiene fisuras en las comisuras de los labios?"
+      ],
+      "key_labs": [
+        "Hemograma completo (con VCM y HCM)",
+        "Ferritina sérica",
+        "Hierro sérico",
+        "TIBC (Capacidad total de unión al hierro)",
+        "Saturación de transferrina",
+        "Frotis de sangre periférica",
+        "Reticulocitos"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Anemia ferropénica",
+        "required_symptoms": ["fatiga", "palidez"],
+        "required_labs": ["Hemograma completo", "Ferritina sérica"],
+        "key_reasoning": "Anemia microcítica hipocrómica con ferritina baja, TIBC elevada y hierro sérico bajo confirma déficit de hierro; buscar causa del sangrado o déficit de ingesta"
+      }
+    }
+  },
+  {
+    "id": "insuficiencia_renal_cronica",
+    "name": "Insuficiencia renal crónica",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "fatiga y debilidad generalizada",
+      "edema de miembros inferiores (tobillos y piernas)",
+      "disminución de la orina (oliguria) o cambios en la micción",
+      "náuseas y vómitos",
+      "pérdida de apetito",
+      "prurito generalizado (picazón en la piel)",
+      "piel pálida o amarillenta",
+      "hipertensión arterial difícil de controlar",
+      "espasmos musculares y calambres nocturnos",
+      "dificultad para concentrarse o confusión"
+    ],
+    "typical_lab_results": {
+      "Creatinina sérica": "4.8 mg/dL (muy elevada; normal: 0.6–1.2 mg/dL)",
+      "BUN (Nitrógeno ureico en sangre)": "72 mg/dL (elevado; normal: 7–20 mg/dL)",
+      "TFG estimada (CKD-EPI)": "14 mL/min/1.73m² (estadio G5; normal: >60)",
+      "Potasio sérico": "6.1 mEq/L (hiperkalemia; normal: 3.5–5.0 mEq/L)",
+      "Bicarbonato": "18 mEq/L (acidosis; normal: 22–29 mEq/L)",
+      "Hemoglobina": "9.0 g/dL (anemia de enfermedad crónica)",
+      "Fósforo sérico": "6.8 mg/dL (elevado; normal: 2.5–4.5 mg/dL)",
+      "Calcio sérico": "8.1 mg/dL (bajo-normal; normal: 8.5–10.5 mg/dL)",
+      "PTH intacta": "340 pg/mL (elevada; normal: 15–65 pg/mL)",
+      "Proteinuria en orina 24h": "2.1 g/24h (elevada; normal: <0.15 g/24h)"
+    },
+    "differential_diagnoses": [
+      "Insuficiencia renal aguda",
+      "Nefropatía diabética",
+      "Glomerulonefritis crónica",
+      "Nefropatía hipertensiva",
+      "Enfermedad renal poliquística"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Tiene hinchazón en los pies, tobillos o piernas?",
+        "¿Ha notado cambios en la cantidad o el color de la orina?",
+        "¿Tiene antecedentes de diabetes o hipertensión arterial?",
+        "¿Ha tenido infecciones urinarias frecuentes en el pasado?",
+        "¿Siente picazón en la piel sin causa aparente?",
+        "¿Tiene náuseas, vómitos o ha perdido el apetito?",
+        "¿Hay antecedentes familiares de enfermedad renal?",
+        "¿Consume antiinflamatorios (ibuprofeno, etc.) con frecuencia?",
+        "¿Ha tenido cálculos en el riñón?",
+        "¿Cuánto tiempo lleva con estos síntomas?"
+      ],
+      "key_labs": [
+        "Creatinina sérica",
+        "BUN (Nitrógeno ureico)",
+        "TFG estimada",
+        "Electrolitos (Potasio, Sodio, Bicarbonato)",
+        "Proteinuria en orina de 24h",
+        "Hemograma completo",
+        "Ecografía renal bilateral",
+        "Fósforo, Calcio y PTH"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Insuficiencia renal crónica",
+        "required_symptoms": ["edema", "fatiga"],
+        "required_labs": ["Creatinina sérica", "TFG estimada"],
+        "key_reasoning": "TFG <60 mL/min por ≥3 meses con marcadores de daño renal (proteinuria); estadificar según TFG y albuminuria para guiar tratamiento"
+      }
+    }
+  },
+  {
+    "id": "gota",
+    "name": "Gota",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "dolor articular intenso de inicio súbito (generalmente nocturno)",
+      "articulación roja, caliente, brillante e inflamada",
+      "afectación típica del primer dedo del pie (podagra)",
+      "limitación funcional articular severa",
+      "fiebre baja durante los ataques",
+      "tofos: nódulos subcutáneos de cristales de urato (en ataques crónicos)",
+      "el dolor es tan intenso que no tolera ni el contacto de la sábana"
+    ],
+    "typical_lab_results": {
+      "Ácido úrico sérico": "10.2 mg/dL (muy elevado; normal hombre: 3.4–7.0 mg/dL)",
+      "PCR (Proteína C reactiva)": "5.8 mg/dL (elevada; normal: <1.0 mg/dL)",
+      "VSG (Velocidad de sedimentación)": "62 mm/h (elevada; normal: <20 mm/h)",
+      "Leucocitos": "12,400/µL (leucocitosis leve)",
+      "Creatinina": "1.4 mg/dL (levemente elevada)",
+      "Función hepática": "Normal",
+      "Análisis de líquido sinovial": "Cristales de urato monosódico birrefringentes negativos bajo luz polarizada (diagnóstico definitivo)",
+      "Radiografía articular": "Erosiones óseas en sacabocados en articulación metatarsofalángica"
+    },
+    "differential_diagnoses": [
+      "Artritis séptica (infecciosa)",
+      "Pseudogota (depósito de pirofosfato de calcio)",
+      "Artritis reumatoide",
+      "Celulitis",
+      "Artritis reactiva"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿El dolor articular comenzó de forma súbita, especialmente de noche?",
+        "¿Cuál articulación está afectada? ¿Es el dedo gordo del pie?",
+        "¿La articulación está roja, caliente e inflamada?",
+        "¿Consume alcohol frecuentemente? ¿Qué tipo?",
+        "¿Come muchos mariscos, carnes rojas, vísceras o fructosa?",
+        "¿Ha tenido episodios similares anteriormente?",
+        "¿Toma diuréticos, aspirina o ciclosporina?",
+        "¿Tiene antecedentes de enfermedad renal o litiasis urinaria?",
+        "¿Ha notado nódulos bajo la piel cerca de articulaciones?"
+      ],
+      "key_labs": [
+        "Ácido úrico sérico",
+        "PCR y VSG",
+        "Función renal (Creatinina)",
+        "Análisis de líquido sinovial",
+        "Radiografía de la articulación afectada",
+        "Hemograma completo"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Gota",
+        "required_symptoms": ["dolor articular súbito nocturno", "articulación roja e inflamada"],
+        "required_labs": ["Ácido úrico sérico", "Análisis de líquido sinovial"],
+        "key_reasoning": "Hiperuricemia con artritis aguda monoarticular y cristales de urato en líquido sinovial; evaluar factores precipitantes y daño renal asociado"
+      }
+    }
+  },
+  {
+    "id": "lupus_eritematoso",
+    "name": "Lupus eritematoso sistémico",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "eritema en alas de mariposa (rash malar en mejillas y nariz)",
+      "fotosensibilidad (brotes al exponerse al sol)",
+      "úlceras orales indoloras",
+      "artritis no erosiva en múltiples articulaciones",
+      "serositis: pleuritis (dolor al respirar) o pericarditis",
+      "afectación renal (edema, hipertensión, orina espumosa)",
+      "fatiga intensa y fiebre sin foco claro",
+      "alopecia (caída del cabello)",
+      "fenómeno de Raynaud (dedos que se tornan blancos o azules con el frío)"
+    ],
+    "typical_lab_results": {
+      "ANA (Anticuerpos antinucleares)": "Positivo 1:640 (diagnósticamente significativo; normal: negativo)",
+      "Anti-dsDNA (anti-DNA doble cadena)": "Positivo, 168 UI/mL (muy elevado; normal: <10 UI/mL)",
+      "Anti-Smith (Anti-Sm)": "Positivo (altamente específico para LES)",
+      "Complemento C3": "58 mg/dL (bajo; normal: 90–180 mg/dL)",
+      "Complemento C4": "7 mg/dL (bajo; normal: 16–47 mg/dL)",
+      "Hemoglobina": "10.2 g/dL (anemia hemolítica)",
+      "Leucocitos": "2,900/µL (leucopenia; normal: 4,500–11,000)",
+      "Plaquetas": "88,000/µL (trombocitopenia; normal: 150,000–400,000)",
+      "Proteinuria en orina 24h": "2.5 g/24h (nefritis lúpica)",
+      "VSG": "98 mm/h (muy elevada)"
+    },
+    "differential_diagnoses": [
+      "Artritis reumatoide",
+      "Síndrome de Sjögren",
+      "Dermatomiositis",
+      "Enfermedad mixta del tejido conectivo",
+      "Vasculitis sistémica"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Tiene erupciones en la cara, especialmente con forma de mariposa en mejillas y nariz?",
+        "¿La piel le reacciona con manchas o ronchas al exponerse al sol?",
+        "¿Tiene llagas en la boca o nariz con frecuencia?",
+        "¿Ha notado caída excesiva del cabello?",
+        "¿Tiene dolor en múltiples articulaciones?",
+        "¿Ha tenido dolor en el pecho al respirar profundo?",
+        "¿Orina espumoso o ha notado cambios en la orina?",
+        "¿Hay antecedentes familiares de enfermedades autoinmunes?",
+        "¿Es mujer en edad reproductiva?",
+        "¿Los síntomas empeoran con la exposición al sol?"
+      ],
+      "key_labs": [
+        "ANA (Anticuerpos antinucleares)",
+        "Anti-dsDNA",
+        "Anti-Smith",
+        "Complemento C3 y C4",
+        "Hemograma completo",
+        "Función renal y proteinuria",
+        "VSG y PCR"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Lupus eritematoso sistémico",
+        "required_symptoms": ["eritema malar", "fotosensibilidad", "artritis"],
+        "required_labs": ["ANA", "Anti-dsDNA"],
+        "key_reasoning": "Diagnóstico con ≥4 de 11 criterios SLICC: ANA positivo, anti-dsDNA, manifestaciones cutáneas, artritis, serositis, nefritis; complemento bajo indica actividad"
+      }
+    }
+  },
+  {
+    "id": "epoc",
+    "name": "EPOC (Enfermedad Pulmonar Obstructiva Crónica)",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "disnea progresiva (empeora con el tiempo y el esfuerzo)",
+      "tos crónica (especialmente matutina)",
+      "producción crónica de esputo (flema)",
+      "sibilancias (silbidos al respirar)",
+      "opresión torácica",
+      "intolerancia al ejercicio que ha empeorado con los años",
+      "cianosis labial o de extremidades (en casos avanzados)",
+      "tórax en barril (hiperinsuflación) al examen físico",
+      "uso de músculos accesorios para respirar",
+      "pérdida de peso en estadios avanzados"
+    ],
+    "typical_lab_results": {
+      "Espirometría FEV1/FVC post-broncodilatador": "0.61 (obstrucción; diagnóstico si <0.70)",
+      "FEV1": "55% del predicho (EPOC moderado-severo, GOLD III)",
+      "Saturación de O2 (pulsioximetría)": "91% (leve hipoxemia; normal: 95–100%)",
+      "Gasometría arterial PaO2": "68 mmHg (hipoxemia moderada; normal: 80–100 mmHg)",
+      "Gasometría arterial PaCO2": "48 mmHg (hipercapnia leve; normal: 35–45 mmHg)",
+      "Radiografía de tórax": "Hiperinsuflación, diafragmas aplanados, aumento del espacio retroesternal",
+      "TAC de tórax (HRCT)": "Enfisema centrolobulillar bilateral, predominio en lóbulos superiores",
+      "Hemograma": "Poliglobulia compensadora (Hb 18.2 g/dL)",
+      "Alfa-1 antitripsina": "Normal (descarta déficit)"
+    },
+    "differential_diagnoses": [
+      "Asma bronquial",
+      "Insuficiencia cardíaca congestiva",
+      "Bronquiectasias",
+      "Tuberculosis pulmonar",
+      "Cáncer de pulmón"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Fuma o ha fumado? ¿Cuántos cigarrillos al día y por cuántos años (índice paquete-año)?",
+        "¿Ha estado expuesto a humos, polvos o contaminación laboral por largo tiempo?",
+        "¿Tiene tos crónica, especialmente al levantarse en la mañana?",
+        "¿Expulsa flema al toser? ¿De qué color?",
+        "¿La falta de aire ha empeorado progresivamente con los años?",
+        "¿Ha tenido hospitalizaciones frecuentes por problemas respiratorios?",
+        "¿Usa inhaladores actualmente?",
+        "¿Cuántas actividades del día a día ya no puede realizar por falta de aire?",
+        "¿Ha perdido peso recientemente?",
+        "¿Algún familiar tuvo enfisema o problemas pulmonares similares?"
+      ],
+      "key_labs": [
+        "Espirometría con prueba broncodilatadora",
+        "Radiografía de tórax",
+        "Gasometría arterial",
+        "Saturación de O2 en reposo y con esfuerzo",
+        "TAC de tórax de alta resolución",
+        "Hemograma completo",
+        "Alfa-1 antitripsina"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "EPOC",
+        "required_symptoms": ["disnea progresiva", "tos crónica", "historia de tabaquismo"],
+        "required_labs": ["Espirometría"],
+        "key_reasoning": "FEV1/FVC <0.70 post-broncodilatador en espirometría + síntomas respiratorios crónicos + exposición al humo; clasificar severidad por FEV1 (GOLD I–IV)"
+      }
+    }
+  },
+  {
+    "id": "gastritis_cronica",
+    "name": "Gastritis crónica",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "dolor o ardor epigástrico (boca del estómago)",
+      "náuseas frecuentes",
+      "vómitos ocasionales",
+      "sensación de plenitud o pesadez posprandial",
+      "pérdida de apetito",
+      "eructos frecuentes",
+      "indigestión o dispepsia",
+      "síntomas que empeoran con el estrés, el alcohol o los AINEs",
+      "en gastritis atrófica: síntomas de deficiencia de B12 (neuropatía, anemia)"
+    ],
+    "typical_lab_results": {
+      "Test de ureasa en aliento (H. pylori)": "Positivo",
+      "Antígeno de H. pylori en heces": "Positivo",
+      "Serología H. pylori IgG": "Positivo, 52 U/mL (elevado)",
+      "Hemograma completo": "Normal o anemia leve microcítica",
+      "Vitamina B12": "270 pg/mL (límite inferior; normal: 200–900 pg/mL)",
+      "Endoscopía digestiva alta": "Eritema y edema de mucosa gástrica, patrón granular, área antral afectada",
+      "Biopsia gástrica": "Gastritis crónica activa con H. pylori, metaplasia intestinal leve",
+      "Gastrina sérica": "85 pg/mL (levemente elevada en gastritis atrófica)"
+    },
+    "differential_diagnoses": [
+      "Úlcera péptica gástrica o duodenal",
+      "Enfermedad por reflujo gastroesofágico (ERGE)",
+      "Cáncer gástrico",
+      "Dispepsia funcional",
+      "Colecistitis o colelitiasis"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Tiene dolor o ardor en la boca del estómago? ¿Cuándo aparece?",
+        "¿El dolor mejora o empeora al comer o tomar antiácidos?",
+        "¿Consume antiinflamatorios (ibuprofeno, naproxeno, diclofenaco) con frecuencia?",
+        "¿Fuma o consume alcohol regularmente?",
+        "¿Tiene mucho estrés en su vida diaria?",
+        "¿Ha notado sangre en las heces (heces negras o alquitranadas) o vómitos con sangre?",
+        "¿Ha perdido peso sin causa aparente?",
+        "¿Algún familiar ha tenido H. pylori, úlcera o cáncer gástrico?",
+        "¿Tiene náuseas o vómitos frecuentes?",
+        "¿Cuánto tiempo lleva con estos síntomas?"
+      ],
+      "key_labs": [
+        "Test de H. pylori (antígeno en heces o urea en aliento)",
+        "Endoscopía digestiva alta con biopsia",
+        "Hemograma completo",
+        "Vitamina B12",
+        "Serología H. pylori"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Gastritis crónica",
+        "required_symptoms": ["dolor epigástrico", "náuseas"],
+        "required_labs": ["Test de H. pylori", "Endoscopía digestiva alta"],
+        "key_reasoning": "Confirmación histológica por biopsia endoscópica; H. pylori es la causa más común; descartar úlcera y neoplasia, evaluar necesidad de erradicación"
+      }
+    }
+  },
+  {
+    "id": "sindrome_metabolico",
+    "name": "Síndrome metabólico",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "obesidad abdominal (circunferencia de cintura aumentada)",
+      "acantosis nigricans (piel oscura en pliegues)",
+      "fatiga y somnolencia posprandial",
+      "ronquidos y apnea del sueño",
+      "presión arterial elevada",
+      "dificultad para perder peso a pesar de dieta",
+      "poca tolerancia al ejercicio",
+      "sed leve y orinas frecuentes (prediabetes)"
+    ],
+    "typical_lab_results": {
+      "Glucosa en ayunas": "112 mg/dL (prediabetes; normal: 70–99 mg/dL)",
+      "HbA1c": "6.1% (prediabetes; normal: <5.7%)",
+      "Triglicéridos": "210 mg/dL (elevados; normal: <150 mg/dL)",
+      "HDL colesterol": "36 mg/dL (bajo; normal hombre >40, mujer >50 mg/dL)",
+      "LDL colesterol": "138 mg/dL (elevado; normal: <130 mg/dL)",
+      "Presión arterial": "138/88 mmHg (elevada)",
+      "Circunferencia abdominal": "108 cm en hombre (anormal: >102 cm)",
+      "Insulina en ayunas": "22 µU/mL (elevada; normal: <25 µU/mL, índice HOMA >3.0)",
+      "Ácido úrico": "7.8 mg/dL (elevado)",
+      "Función hepática": "ALT 52 U/L (levemente elevada — hígado graso)"
+    },
+    "differential_diagnoses": [
+      "Diabetes tipo 2 establecida",
+      "Síndrome de Cushing",
+      "Hipotiroidismo",
+      "Síndrome de ovario poliquístico (en mujeres)",
+      "Hipertensión arterial primaria aislada"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Cuáles son su peso, talla y medida de cintura?",
+        "¿Tiene la presión arterial elevada o le han dicho que la tiene?",
+        "¿Tiene antecedentes familiares de diabetes, infartos o dislipidemia?",
+        "¿Realiza actividad física de forma regular?",
+        "¿Cómo describe su alimentación habitual (grasas, azúcares, harinas)?",
+        "¿Ronca o le han dicho que deja de respirar mientras duerme?",
+        "¿Ha notado manchas oscuras en la nuca, axilas o ingles?",
+        "¿Toma medicamentos para la presión, el colesterol o el azúcar?",
+        "¿Ha intentado bajar de peso sin éxito?",
+        "¿Siente mucho sueño después de las comidas?"
+      ],
+      "key_labs": [
+        "Glucosa en ayunas",
+        "HbA1c",
+        "Perfil lipídico completo (Colesterol, Triglicéridos, HDL, LDL)",
+        "Insulina en ayunas (índice HOMA)",
+        "Medición de presión arterial",
+        "Medición de circunferencia abdominal",
+        "Función hepática (ALT, AST)"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Síndrome metabólico",
+        "required_symptoms": ["obesidad abdominal"],
+        "required_labs": ["Glucosa en ayunas", "Triglicéridos", "HDL colesterol"],
+        "key_reasoning": "Diagnóstico con ≥3 de 5 criterios IDF/AHA: obesidad abdominal, TG ≥150, HDL bajo, PA ≥130/85, glucosa ≥100; riesgo cardiovascular y de DM2 elevado"
+      }
+    }
+  },
+  {
+    "id": "neumonia_bacteriana",
+    "name": "Neumonía bacteriana",
+    "category": "Infectología",
+    "symptoms": [
+      "fiebre alta de inicio brusco (>38.5°C) con escalofríos",
+      "tos productiva con esputo purulento (amarillo-verdoso) o herrumbroso",
+      "dolor torácico de tipo pleurítico (empeora al respirar profundo)",
+      "disnea (falta de aire)",
+      "taquicardia y taquipnea",
+      "crepitantes y matidez a la percusión en el examen pulmonar",
+      "malestar general y postración",
+      "sudoración profusa"
+    ],
+    "typical_lab_results": {
+      "Leucocitos": "21,500/µL con neutrofilia (>80%) y bandas (infección bacteriana)",
+      "PCR (Proteína C reactiva)": "18.4 mg/dL (muy elevada; normal: <1.0 mg/dL)",
+      "Procalcitonina": "3.8 ng/mL (elevada; sugiere etiología bacteriana; normal: <0.5 ng/mL)",
+      "Hemocultivos (x2)": "Streptococcus pneumoniae (positivo en 20–30% de casos)",
+      "Cultivo de esputo + Gram": "Diplococos gram positivos, neumococo",
+      "Radiografía de tórax": "Consolidación alveolar en lóbulo inferior derecho con broncograma aéreo",
+      "Saturación de O2": "90% (hipoxemia moderada; normal: 95–100%)",
+      "Gasometría arterial": "PaO2 65 mmHg, PaCO2 32 mmHg (alcalosis respiratoria)",
+      "LDH": "380 U/L (elevada)",
+      "Antígeno urinario neumococo": "Positivo"
+    },
+    "differential_diagnoses": [
+      "Neumonía viral (COVID-19, influenza)",
+      "Tuberculosis pulmonar",
+      "Embolia pulmonar",
+      "Insuficiencia cardíaca con edema pulmonar",
+      "Neumonía atípica por Mycoplasma"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Cuándo comenzó la fiebre y qué tan alta ha estado?",
+        "¿Tiene tos? ¿Expulsa flema? ¿De qué color?",
+        "¿Tiene dolor al respirar profundo o al toser?",
+        "¿Le falta el aire en reposo o con actividad mínima?",
+        "¿Ha tenido escalofríos intensos?",
+        "¿Tiene enfermedades de base (diabetes, VIH, inmunosupresión, EPOC)?",
+        "¿Ha recibido vacuna antineumocócica o antigripal?",
+        "¿Ha viajado recientemente o ha estado en contacto con personas enfermas?"
+      ],
+      "key_labs": [
+        "Hemograma completo con diferencial",
+        "PCR y Procalcitonina",
+        "Radiografía de tórax",
+        "Hemocultivos (antes de antibióticos)",
+        "Cultivo y Gram de esputo",
+        "Gasometría arterial",
+        "Antígeno urinario de neumococo y Legionella"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Neumonía bacteriana",
+        "required_symptoms": ["fiebre", "tos productiva", "disnea"],
+        "required_labs": ["Radiografía de tórax", "Hemograma completo"],
+        "key_reasoning": "Consolidación radiológica + síntomas respiratorios agudos + leucocitosis con neutrofilia + procalcitonina elevada; calcular PSI/PORT o CURB-65 para decidir hospitalización"
+      }
+    }
+  },
+  {
+    "id": "dengue",
+    "name": "Dengue",
+    "category": "Infectología",
+    "symptoms": [
+      "fiebre alta de inicio brusco (39–40°C)",
+      "cefalea intensa, especialmente retroorbitaria (detrás de los ojos)",
+      "dolor muscular intenso (mialgia) — 'fiebre rompehuesos'",
+      "dolor articular (artralgia)",
+      "exantema maculopapular que aparece al 3–5 día",
+      "náuseas y vómitos",
+      "sangrado leve: petequias, epistaxis, gingivorragia",
+      "prueba del torniquete positiva",
+      "dolor abdominal (señal de alarma para dengue grave)",
+      "postración y decaimiento intenso"
+    ],
+    "typical_lab_results": {
+      "Leucocitos": "2,600/µL (leucopenia; normal: 4,500–11,000/µL)",
+      "Plaquetas": "62,000/µL (trombocitopenia moderada; normal: 150,000–400,000)",
+      "Hematocrito": "49% (hemoconcentración leve — signo de alarma si sube ≥20%)",
+      "Antígeno NS1 dengue": "Positivo (días 1–5 de la enfermedad)",
+      "IgM anti-dengue": "Positivo (a partir del día 5)",
+      "IgG anti-dengue": "Positivo (infección secundaria o convalecencia)",
+      "AST (TGO)": "108 U/L (elevada; normal: <40 U/L)",
+      "ALT (TGP)": "88 U/L (elevada; normal: <45 U/L)",
+      "Tiempo de protrombina": "14.5 seg (levemente prolongado)",
+      "Fibrinógeno": "180 mg/dL (bajo-normal)"
+    },
+    "differential_diagnoses": [
+      "Malaria",
+      "Leptospirosis",
+      "Chikungunya",
+      "Fiebre tifoidea",
+      "Zika"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Cuándo comenzó la fiebre y qué tan alta ha estado?",
+        "¿Tiene dolor intenso detrás de los ojos (retroorbitario)?",
+        "¿Tiene dolores musculares o articulares muy intensos?",
+        "¿Ha notado manchas rojas en la piel o sangrado de encías o nariz?",
+        "¿Vive en o ha viajado a zonas endémicas de dengue?",
+        "¿Ha notado la presencia de mosquitos Aedes aegypti en su entorno?",
+        "¿Tiene dolor abdominal intenso? (señal de alarma)",
+        "¿Ha podido tomar líquidos sin vomitar?",
+        "¿Ha tenido dengue antes? (aumenta riesgo de dengue grave)"
+      ],
+      "key_labs": [
+        "Hemograma completo con plaquetas",
+        "Antígeno NS1 dengue",
+        "Serología IgM/IgG dengue",
+        "Hematocrito (monitorear hemoconcentración)",
+        "Transaminasas (AST, ALT)",
+        "Prueba del torniquete"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Dengue",
+        "required_symptoms": ["fiebre", "cefalea retroorbitaria", "mialgia"],
+        "required_labs": ["Antígeno NS1 dengue", "Hemograma completo con plaquetas"],
+        "key_reasoning": "Antígeno NS1 positivo en fase aguda o IgM positiva, con trombocitopenia y leucopenia en zona endémica; identificar signos de alarma para dengue grave"
+      }
+    }
+  },
+  {
+    "id": "tuberculosis_pulmonar",
+    "name": "Tuberculosis pulmonar",
+    "category": "Infectología",
+    "symptoms": [
+      "tos crónica de más de 2–3 semanas de evolución",
+      "expectoración con sangre (hemoptisis) o esputo herrumbroso",
+      "fiebre vespertina (generalmente por las tardes)",
+      "sudoración nocturna profusa",
+      "pérdida de peso significativa e involuntaria",
+      "fatiga crónica y astenia",
+      "disnea progresiva",
+      "dolor torácico pleurítico",
+      "adenopatías cervicales palpables"
+    ],
+    "typical_lab_results": {
+      "Baciloscopia de esputo (BAAR) — 1a muestra": "Positivo 2+",
+      "Baciloscopia de esputo (BAAR) — 2a muestra": "Positivo 1+",
+      "Cultivo en medio Löwenstein-Jensen": "Mycobacterium tuberculosis (resultado en 4–8 semanas)",
+      "PCR/Xpert MTB-RIF (GeneXpert)": "M. tuberculosis detectado; sin resistencia a rifampicina",
+      "Prueba de tuberculina (PPD)": "18 mm de induración (positivo; >10 mm en inmunocompetentes)",
+      "Radiografía de tórax": "Infiltrados fibronodulares apicales, cavitación en lóbulo superior derecho",
+      "VIH (prueba rápida)": "Negativo",
+      "VSG": "105 mm/h (muy elevada)",
+      "Hemograma": "Anemia normocítica leve, linfocitosis relativa",
+      "LDH": "420 U/L (elevada)"
+    },
+    "differential_diagnoses": [
+      "Neumonía bacteriana o atípica",
+      "Cáncer de pulmón",
+      "Sarcoidosis",
+      "Histoplasmosis",
+      "Absceso pulmonar"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Hace cuánto tiempo tiene tos? ¿Ha tosido sangre?",
+        "¿Tiene fiebre, especialmente por las tardes o noches?",
+        "¿Suda mucho de noche, empapando la ropa o las sábanas?",
+        "¿Ha perdido peso sin estar a dieta? ¿Cuántos kilos?",
+        "¿Ha estado en contacto con alguien diagnosticado con tuberculosis?",
+        "¿Vive en condiciones de hacinamiento?",
+        "¿Es VIH positivo o tiene alguna condición que afecte su sistema inmune?",
+        "¿Ha tenido tuberculosis anteriormente? ¿Recibió tratamiento completo?",
+        "¿Trabaja en hospital, prisión o albergue?"
+      ],
+      "key_labs": [
+        "Baciloscopia de esputo (BAAR) x2–3 muestras",
+        "PCR/Xpert MTB-RIF (GeneXpert)",
+        "Cultivo de esputo para micobacterias",
+        "Radiografía de tórax",
+        "PPD (prueba de tuberculina) o IGRA",
+        "Prueba de VIH"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Tuberculosis pulmonar",
+        "required_symptoms": ["tos crónica >2 semanas", "sudoración nocturna", "pérdida de peso"],
+        "required_labs": ["Baciloscopia de esputo (BAAR)", "Radiografía de tórax"],
+        "key_reasoning": "BAAR positivo en esputo o GeneXpert positivo con cuadro clínico compatible; notificación obligatoria y inicio de DOTS (tratamiento directamente observado)"
+      }
+    }
+  },
+  {
+    "id": "infeccion_urinaria",
+    "name": "Infección del tracto urinario (ITU)",
+    "category": "Infectología",
+    "symptoms": [
+      "disuria (ardor o dolor al orinar)",
+      "polaquiuria (orinar frecuente pero en poca cantidad)",
+      "urgencia miccional (necesidad imperiosa de orinar)",
+      "orina turbia, de mal olor o con sangre (hematuria)",
+      "dolor o presión suprapúbica",
+      "fiebre y escalofríos (sugiere pielonefritis)",
+      "dolor lumbar o en flanco (pielonefritis alta)",
+      "náuseas y vómitos (pielonefritis)"
+    ],
+    "typical_lab_results": {
+      "Examen de orina (sedimento)": "Leucocitos 3+, nitritos positivos, hematíes 2+, bacterias ++",
+      "Urocultivo": "Escherichia coli >100,000 UFC/mL (uropatógeno más común: 80%)",
+      "Antibiograma": "Sensible a: nitrofurantoína, fosfomicina, TMP-SMX. Resistente a: ampicilina",
+      "Leucocitos en sangre": "12,800/µL (leucocitosis moderada)",
+      "PCR": "3.2 mg/dL (elevada; normal: <1.0 mg/dL)",
+      "Creatinina": "0.9 mg/dL (normal — no hay compromiso renal)",
+      "Hemograma": "Neutrofilia (75%)",
+      "Ecografía renal y vesical": "Sin litiasis, sin obstrucción, vejiga con residuo postmiccional mínimo"
+    },
+    "differential_diagnoses": [
+      "Uretritis por infección de transmisión sexual (ITS)",
+      "Vaginitis o cervicitis (en mujeres)",
+      "Prostatitis aguda (en hombres)",
+      "Cálculo ureteral (cólico nefrítico)",
+      "Vejiga hiperactiva"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Siente ardor o dolor al orinar?",
+        "¿Orina con más frecuencia de lo habitual pero en poca cantidad?",
+        "¿Siente necesidad urgente de orinar que no puede controlar?",
+        "¿Ha notado sangre en la orina?",
+        "¿Tiene dolor en la parte baja del abdomen o en la espalda/flancos?",
+        "¿Tiene fiebre o escalofríos? (indica compromiso renal)",
+        "¿Ha tenido relaciones sexuales recientes?",
+        "¿Ha tenido infecciones urinarias anteriormente? ¿Con qué frecuencia?",
+        "¿Está embarazada? (en mujeres)",
+        "¿Tiene diabetes, cálculos renales o malformaciones urinarias conocidas?"
+      ],
+      "key_labs": [
+        "Examen de orina completo (sedimento urinario)",
+        "Urocultivo con antibiograma",
+        "Hemograma completo",
+        "PCR",
+        "Creatinina",
+        "Ecografía renal y vesical"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Infección del tracto urinario (ITU)",
+        "required_symptoms": ["disuria", "polaquiuria"],
+        "required_labs": ["Examen de orina completo", "Urocultivo con antibiograma"],
+        "key_reasoning": "Urocultivo ≥100,000 UFC/mL del uropatógeno + síntomas clínicos; distinguir ITU baja (cistitis) de alta (pielonefritis) por fiebre y dolor lumbar; guiar antibiótico según antibiograma"
+      }
+    }
+  },
+  {
+    "id": "hepatitis_a",
+    "name": "Hepatitis A",
+    "category": "Infectología",
+    "symptoms": [
+      "ictericia (coloración amarilla de piel, ojos y mucosas)",
+      "orina oscura color 'coca-cola' (coluria)",
+      "heces pálidas o acólicas (hipocolia)",
+      "fatiga intensa",
+      "náuseas y vómitos",
+      "dolor en hipocondrio derecho (zona del hígado)",
+      "fiebre moderada al inicio",
+      "pérdida de apetito marcada",
+      "prurito generalizado por retención de bilis"
+    ],
+    "typical_lab_results": {
+      "Bilirrubina total": "9.2 mg/dL (muy elevada; normal: <1.2 mg/dL)",
+      "Bilirrubina directa (conjugada)": "7.5 mg/dL (elevada; ictericia colestásica)",
+      "Bilirrubina indirecta": "1.7 mg/dL",
+      "AST (TGO)": "1,450 U/L (muy elevada; normal: <40 U/L)",
+      "ALT (TGP)": "1,820 U/L (muy elevada; normal: <45 U/L — más específica del hígado)",
+      "Fosfatasa alcalina": "340 U/L (elevada; normal: 44–147 U/L)",
+      "Tiempo de protrombina (TP)": "15 segundos (levemente prolongado; normal: 11–13 seg)",
+      "IgM anti-VHA": "Positivo (diagnóstico de infección aguda)",
+      "IgG anti-VHA": "Positivo (infección pasada o vacunación previa)",
+      "Hemograma": "Linfocitosis relativa, sin leucocitosis"
+    },
+    "differential_diagnoses": [
+      "Hepatitis B aguda",
+      "Hepatitis C aguda",
+      "Hepatitis E",
+      "Colangitis aguda",
+      "Hepatitis tóxica por medicamentos o alcohol"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Ha notado coloración amarilla en la piel, los ojos o la boca?",
+        "¿La orina está más oscura que lo habitual, color café oscuro?",
+        "¿Las heces están más claras o blanquecinas?",
+        "¿Ha consumido agua sin hervir, alimentos de dudosa procedencia o mariscos crudos?",
+        "¿Ha viajado recientemente a zonas con malas condiciones sanitarias?",
+        "¿Ha tenido contacto con personas con ictericia o hepatitis?",
+        "¿Está vacunado contra la hepatitis A?",
+        "¿Consume alcohol? ¿Toma algún medicamento hepatotóxico?",
+        "¿Tiene dolor en el lado derecho del abdomen?"
+      ],
+      "key_labs": [
+        "Perfil hepático completo (AST, ALT, Bilirrubinas, Fosfatasa alcalina)",
+        "IgM anti-VHA (diagnóstico específico)",
+        "Tiempo de protrombina (evaluación de función hepática)",
+        "Hemograma completo",
+        "Ecografía abdominal"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Hepatitis A",
+        "required_symptoms": ["ictericia", "coluria", "náuseas"],
+        "required_labs": ["IgM anti-VHA", "Perfil hepático (AST, ALT)"],
+        "key_reasoning": "IgM anti-VHA positivo en contexto de hepatitis aguda (elevación marcada de transaminasas, ictericia); transmisión fecal-oral; autolimitada, soporte hidratación"
+      }
+    }
+  },
+  {
+    "id": "fiebre_tifoidea",
+    "name": "Fiebre tifoidea",
+    "category": "Infectología",
+    "symptoms": [
+      "fiebre que sube escalonadamente durante la primera semana (hasta 40°C)",
+      "cefalea intensa y frontal",
+      "bradicardia relativa (la frecuencia cardíaca no sube proporcional a la fiebre)",
+      "manchas rosadas en el tronco (roséolas tíficas) — aparecen en semana 2",
+      "esplenomegalia (bazo agrandado) palpable",
+      "hepatomegalia leve",
+      "estreñimiento inicial, seguido de diarrea en 'agua de arroz' en semana 3",
+      "malestar general intenso y postración",
+      "lengua saburral (cubierta de una capa blanca-café)"
+    ],
+    "typical_lab_results": {
+      "Hemocultivo (semana 1–2)": "Salmonella typhi aislada (positivo en 70–80%)",
+      "Coprocultivo (semana 3)": "Salmonella typhi (positivo en 60–70%)",
+      "Reacción de Widal O (anti-O)": "1:320 (positivo; significativo si ≥1:160 con cuadro clínico)",
+      "Leucocitos": "3,200/µL (leucopenia con linfocitosis relativa — típico)",
+      "PCR": "10.5 mg/dL (elevada)",
+      "AST": "92 U/L (elevada — hepatitis tífica)",
+      "ALT": "78 U/L (elevada)",
+      "Hemograma": "Anemia leve, trombocitopenia moderada (120,000/µL)",
+      "Cultivo de médula ósea": "Estándar de oro diagnóstico (positivo >90%)",
+      "Prueba de malaria (frotis)": "Negativa (diagnóstico diferencial)"
+    },
+    "differential_diagnoses": [
+      "Malaria",
+      "Dengue",
+      "Brucelosis",
+      "Leptospirosis",
+      "Endocarditis bacteriana"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿La fiebre ha ido subiendo gradualmente durante varios días?",
+        "¿Ha consumido agua sin tratar o alimentos de dudosa procedencia?",
+        "¿Ha viajado a zonas endémicas (áreas rurales, zonas con pobres condiciones sanitarias)?",
+        "¿Ha notado manchas rosadas en el abdomen o el pecho?",
+        "¿Tiene dolor abdominal o cambios en las deposiciones (estreñimiento o diarrea)?",
+        "¿Ha tenido contacto con portadores de fiebre tifoidea?",
+        "¿Está vacunado contra la fiebre tifoidea?",
+        "¿Nota que el pulso parece más lento de lo esperado para la fiebre que tiene?"
+      ],
+      "key_labs": [
+        "Hemocultivo (ideal en las primeras 2 semanas)",
+        "Reacción de Widal (O y H)",
+        "Coprocultivo",
+        "Hemograma completo",
+        "Función hepática (AST, ALT)",
+        "Frotis para malaria (diagnóstico diferencial)"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Fiebre tifoidea",
+        "required_symptoms": ["fiebre escalonada", "cefalea", "bradicardia relativa"],
+        "required_labs": ["Hemocultivo", "Reacción de Widal"],
+        "key_reasoning": "Aislamiento de Salmonella typhi en hemocultivo es diagnóstico definitivo; Widal ≥1:160 con cuadro clínico compatible; tratar con fluoroquinolonas o ceftriaxona"
+      }
+    }
+  },
+  {
+    "id": "malaria",
+    "name": "Malaria (Paludismo)",
+    "category": "Infectología",
+    "symptoms": [
+      "fiebre en picos regulares: frío-calor-sudor, cada 48h (P. vivax/ovale) o 72h (P. malariae)",
+      "escalofríos intensos (fase fría) que duran 15–60 minutos",
+      "fiebre alta (40–41°C) en fase caliente",
+      "sudoración profusa con sensación de mejoría transitoria",
+      "cefalea intensa",
+      "mialgia y artralgia intensas",
+      "náuseas y vómitos",
+      "esplenomegalia dolorosa (bazo agrandado)",
+      "anemia e ictericia leve (por hemólisis de glóbulos rojos)"
+    ],
+    "typical_lab_results": {
+      "Gota gruesa y frotis de sangre periférica": "Plasmodium vivax: trofozoítos en anillo y ameboides ++, esquizontes; glóbulos rojos agrandados con punteado de Schüffner",
+      "Test de diagnóstico rápido (RDT)": "Positivo para Plasmodium no-falciparum",
+      "PCR para Plasmodium": "Positivo, especie P. vivax confirmada",
+      "Hemoglobina": "9.5 g/dL (anemia moderada por hemólisis)",
+      "Plaquetas": "88,000/µL (trombocitopenia)",
+      "Bilirrubina total": "3.2 mg/dL (elevada; hemólisis)",
+      "LDH": "520 U/L (elevada; hemólisis)",
+      "Hematocrito": "30% (bajo)",
+      "Creatinina": "1.0 mg/dL (normal — sin malaria complicada)"
+    },
+    "differential_diagnoses": [
+      "Dengue",
+      "Fiebre tifoidea",
+      "Leptospirosis",
+      "Sepsis bacteriana",
+      "Anemia hemolítica autoinmune"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿La fiebre aparece en episodios regulares, con escalofríos seguidos de fiebre alta y luego sudoración?",
+        "¿Ha viajado o vive en zonas endémicas de malaria (Amazonía, África, Asia tropical)?",
+        "¿Fue picado por mosquitos en esa zona?",
+        "¿Ha tenido malaria anteriormente?",
+        "¿Tomó profilaxis antipalúdica al viajar?",
+        "¿Tiene dolor o inflamación en el lado izquierdo del abdomen (bazo)?",
+        "¿Ha notado coloración amarilla en los ojos o la piel?",
+        "¿Con qué exacta frecuencia repiten los episodios febriles?"
+      ],
+      "key_labs": [
+        "Gota gruesa y frotis de sangre periférica (estándar de oro)",
+        "Test de diagnóstico rápido para malaria (RDT)",
+        "PCR para Plasmodium (identificación de especie)",
+        "Hemograma completo",
+        "Bilirrubinas y LDH (hemólisis)",
+        "Función renal (complicaciones)"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Malaria",
+        "required_symptoms": ["fiebre en picos con escalofríos", "antecedente de zona endémica"],
+        "required_labs": ["Gota gruesa y frotis de sangre periférica", "Test de diagnóstico rápido (RDT)"],
+        "key_reasoning": "Gota gruesa positiva o RDT positivo en paciente con fiebre episódica de zona endémica; identificar especie para definir tratamiento (cloroquina + primaquina para P. vivax)"
+      }
+    }
+  },
+  {
+    "id": "covid19",
+    "name": "COVID-19",
+    "category": "Infectología",
+    "symptoms": [
+      "fiebre o sensación de fiebre",
+      "tos seca persistente",
+      "disnea o sensación de falta de aire",
+      "pérdida del olfato (anosmia) — síntoma muy característico",
+      "pérdida del gusto (ageusia)",
+      "fatiga intensa",
+      "mialgia y cefalea",
+      "dolor de garganta",
+      "diarrea y síntomas gastrointestinales",
+      "congestión o rinorrea"
+    ],
+    "typical_lab_results": {
+      "Test rápido de antígeno SARS-CoV-2": "Positivo",
+      "PCR RT-SARS-CoV-2 (RT-PCR)": "Positivo, Ct: 20 (carga viral alta)",
+      "Dímero D": "2,100 ng/mL (muy elevado; riesgo trombótico; normal: <500 ng/mL)",
+      "Ferritina sérica": "1,250 ng/mL (muy elevada; tormenta de citoquinas)",
+      "PCR (Proteína C reactiva)": "15.8 mg/dL (muy elevada)",
+      "Interleucina-6 (IL-6)": "88 pg/mL (elevada; inflamación severa)",
+      "Linfocitos": "700/µL (linfopenia marcada; normal: 1,000–4,800/µL)",
+      "TAC de tórax": "Opacidades en vidrio esmerilado bilateral de distribución periférica y posterior — patrón típico COVID",
+      "Saturación de O2": "91% (hipoxemia moderada)",
+      "LDH": "580 U/L (elevada; daño tisular)"
+    },
+    "differential_diagnoses": [
+      "Influenza (gripe)",
+      "Neumonía bacteriana",
+      "Otras infecciones respiratorias virales (VRS, adenovirus)",
+      "Tuberculosis pulmonar",
+      "Tromboembolismo pulmonar"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Ha perdido el olfato o el gusto recientemente?",
+        "¿Tiene tos seca persistente y falta de aire?",
+        "¿Ha tenido contacto con personas con COVID-19 confirmado?",
+        "¿Está vacunado contra COVID-19? ¿Cuántas dosis?",
+        "¿Cuántos días lleva con síntomas?",
+        "¿Mide su saturación de oxígeno en casa con oxímetro?",
+        "¿Tiene enfermedades de base que aumentan el riesgo (diabetes, obesidad, hipertensión)?",
+        "¿Ha viajado recientemente o asistido a eventos con aglomeración?"
+      ],
+      "key_labs": [
+        "PCR RT-SARS-CoV-2 (RT-PCR nasofaríngeo)",
+        "Test rápido de antígeno SARS-CoV-2",
+        "Dímero D",
+        "Ferritina y PCR",
+        "Hemograma con linfocitos",
+        "TAC de tórax",
+        "Saturación de O2 en reposo y con esfuerzo (test de los 6 minutos)"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "COVID-19",
+        "required_symptoms": ["fiebre", "tos", "anosmia o ageusia"],
+        "required_labs": ["PCR RT-SARS-CoV-2", "Test rápido de antígeno SARS-CoV-2"],
+        "key_reasoning": "PCR o antígeno positivo para SARS-CoV-2 con síntomas respiratorios compatibles; evaluar saturación y dímero D para decidir hospitalización; vigilar tormenta de citoquinas"
+      }
+    }
+  },
+  {
+    "id": "celulitis_infecciosa",
+    "name": "Celulitis infecciosa",
+    "category": "Infectología",
+    "symptoms": [
+      "eritema (enrojecimiento) con bordes mal definidos que se expande",
+      "calor local intenso",
+      "edema (inflamación) de la zona afectada",
+      "dolor a la palpación",
+      "piel brillante y tensa",
+      "fiebre (38–39°C)",
+      "adenopatías regionales (ganglios inflamados)",
+      "puerta de entrada visible: herida, úlcera, picadura, fisura",
+      "linfangitis: línea roja que asciende desde la lesión"
+    ],
+    "typical_lab_results": {
+      "Leucocitos": "16,200/µL (leucocitosis con neutrofilia 82%)",
+      "PCR": "9.8 mg/dL (elevada)",
+      "VSG": "75 mm/h (elevada)",
+      "Cultivo de secreción de la herida": "Staphylococcus aureus sensible a meticilina (SAMS)",
+      "Hemocultivos (x2)": "Negativos (sin bacteriemia)",
+      "Glucemia": "108 mg/dL (descartar diabetes como factor predisponente)",
+      "Creatinina": "0.9 mg/dL (normal)",
+      "Hemograma completo": "Neutrofilia con bandas"
+    },
+    "differential_diagnoses": [
+      "Erisipela (bordes bien definidos, sobrelevados — Streptococcus)",
+      "Fascitis necrotizante (emergencia quirúrgica — crepitación, dolor severo desproporcionado)",
+      "Trombosis venosa profunda (TVP)",
+      "Dermatitis de contacto alérgica",
+      "Linfedema"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Cuándo comenzó el enrojecimiento y la inflamación? ¿Ha avanzado?",
+        "¿Tuvo alguna herida, picadura, rasguño o lesión en esa zona?",
+        "¿Tiene fiebre?",
+        "¿Tiene diabetes u otra enfermedad que afecte la inmunidad?",
+        "¿Los bordes del enrojecimiento están avanzando?",
+        "¿Tiene un dolor muy intenso que parece desproporcionado con lo que se ve? (alerta fascitis)",
+        "¿Ha recibido antibióticos recientemente?",
+        "¿Tiene mala circulación en las piernas o insuficiencia venosa?",
+        "¿Siente crujidos o crepitación en la zona afectada? (alerta gas — fascitis)"
+      ],
+      "key_labs": [
+        "Hemograma completo",
+        "PCR y VSG",
+        "Glucemia (descartar diabetes)",
+        "Cultivo de secreción si hay herida abierta",
+        "Hemocultivos si hay fiebre alta o sepsis",
+        "Ecografía de partes blandas (descartar absceso o fascitis)"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Celulitis infecciosa",
+        "required_symptoms": ["eritema con bordes mal definidos", "calor local", "edema", "fiebre"],
+        "required_labs": ["Hemograma completo", "PCR"],
+        "key_reasoning": "Diagnóstico clínico: eritema, calor, edema, dolor en tejido celular subcutáneo con fiebre; S. aureus y Streptococcus pyogenes son los más frecuentes; descartar fascitis necrotizante"
+      }
+    }
+  },
+  {
+    "id": "meningitis_bacteriana",
+    "name": "Meningitis bacteriana",
+    "category": "Infectología",
+    "symptoms": [
+      "cefalea intensa de inicio súbito ('la peor de mi vida')",
+      "fiebre alta (>39°C)",
+      "rigidez de nuca (meningismo) — no puede doblar el cuello hacia adelante",
+      "fotofobia (no tolera la luz)",
+      "fonofobia (no tolera el ruido)",
+      "náuseas y vómitos en proyectil",
+      "alteración del nivel de conciencia (confusión, somnolencia)",
+      "petequias o púrpura no blanqueable en piel (meningococo — signo de alarma)",
+      "signo de Kernig positivo",
+      "signo de Brudzinski positivo",
+      "convulsiones (en casos graves)"
+    ],
+    "typical_lab_results": {
+      "LCR — Aspecto": "Turbio, purulento (normal: cristal de roca)",
+      "LCR — Glucosa": "22 mg/dL (muy baja; normal: >50% de la glucemia = >40 mg/dL)",
+      "LCR — Proteínas": "310 mg/dL (muy elevadas; normal: 15–45 mg/dL)",
+      "LCR — Células (citología)": "9,200 células/µL (>90% polimorfonucleares — infección bacteriana)",
+      "LCR — Cultivo": "Neisseria meningitidis serogrupo B",
+      "LCR — PCR bacteriana": "Positivo para N. meningitidis",
+      "Leucocitos en sangre": "24,500/µL (leucocitosis severa)",
+      "PCR sérica": "35 mg/dL (muy elevada)",
+      "Procalcitonina": "18 ng/mL (muy elevada)",
+      "TAC craneal": "Sin lesión focal ni hidrocefalia (indicación previa a punción lumbar si hay focalidad)"
+    },
+    "differential_diagnoses": [
+      "Meningitis viral (encefalitis)",
+      "Hemorragia subaracnoidea",
+      "Absceso cerebral",
+      "Meningitis tuberculosa",
+      "Encefalitis herpética"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿El dolor de cabeza fue de inicio súbito e intensísimo?",
+        "¿Puede doblar el cuello hacia adelante sin dolor?",
+        "¿Tiene mucha sensibilidad a la luz o al ruido?",
+        "¿Está confuso o desorientado?",
+        "¿Ha tenido convulsiones?",
+        "¿Tiene manchas rojas o moradas en la piel que no desaparecen al presionarlas?",
+        "¿Ha estado en contacto con casos de meningitis?",
+        "¿Ha recibido la vacuna antimeningocócica?",
+        "¿Tiene inmunosupresión o asplenia?"
+      ],
+      "key_labs": [
+        "Punción lumbar con análisis completo de LCR (URGENTE)",
+        "Cultivo y Gram de LCR",
+        "PCR bacteriana en LCR",
+        "Hemograma completo",
+        "PCR y Procalcitonina sérica",
+        "Hemocultivos (x2 antes de antibióticos)",
+        "TAC craneal (si hay signos de focalidad, antes de la punción)"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Meningitis bacteriana",
+        "required_symptoms": ["cefalea intensa", "fiebre", "rigidez de nuca"],
+        "required_labs": ["Punción lumbar con análisis de LCR", "Cultivo de LCR"],
+        "key_reasoning": "Tríada clásica (fiebre + rigidez de nuca + alteración mental) + LCR purulento con glucosa baja, proteínas altas y pleocitosis neutrofílica; emergencia médica, antibióticos inmediatos"
+      }
+    }
+  }
+]

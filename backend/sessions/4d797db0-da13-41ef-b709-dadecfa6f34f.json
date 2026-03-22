@@ -1,0 +1,87 @@
+{
+  "session_id": "4d797db0-da13-41ef-b709-dadecfa6f34f",
+  "disease": {
+    "id": "gastritis_cronica",
+    "name": "Gastritis crónica",
+    "category": "Medicina Interna",
+    "symptoms": [
+      "dolor o ardor epigástrico (boca del estómago)",
+      "náuseas frecuentes",
+      "vómitos ocasionales",
+      "sensación de plenitud o pesadez posprandial",
+      "pérdida de apetito",
+      "eructos frecuentes",
+      "indigestión o dispepsia",
+      "síntomas que empeoran con el estrés, el alcohol o los AINEs",
+      "en gastritis atrófica: síntomas de deficiencia de B12 (neuropatía, anemia)"
+    ],
+    "typical_lab_results": {
+      "Test de ureasa en aliento (H. pylori)": "Positivo",
+      "Antígeno de H. pylori en heces": "Positivo",
+      "Serología H. pylori IgG": "Positivo, 52 U/mL (elevado)",
+      "Hemograma completo": "Normal o anemia leve microcítica",
+      "Vitamina B12": "270 pg/mL (límite inferior; normal: 200–900 pg/mL)",
+      "Endoscopía digestiva alta": "Eritema y edema de mucosa gástrica, patrón granular, área antral afectada",
+      "Biopsia gástrica": "Gastritis crónica activa con H. pylori, metaplasia intestinal leve",
+      "Gastrina sérica": "85 pg/mL (levemente elevada en gastritis atrófica)"
+    },
+    "differential_diagnoses": [
+      "Úlcera péptica gástrica o duodenal",
+      "Enfermedad por reflujo gastroesofágico (ERGE)",
+      "Cáncer gástrico",
+      "Dispepsia funcional",
+      "Colecistitis o colelitiasis"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Tiene dolor o ardor en la boca del estómago? ¿Cuándo aparece?",
+        "¿El dolor mejora o empeora al comer o tomar antiácidos?",
+        "¿Consume antiinflamatorios (ibuprofeno, naproxeno, diclofenaco) con frecuencia?",
+        "¿Fuma o consume alcohol regularmente?",
+        "¿Tiene mucho estrés en su vida diaria?",
+        "¿Ha notado sangre en las heces (heces negras o alquitranadas) o vómitos con sangre?",
+        "¿Ha perdido peso sin causa aparente?",
+        "¿Algún familiar ha tenido H. pylori, úlcera o cáncer gástrico?",
+        "¿Tiene náuseas o vómitos frecuentes?",
+        "¿Cuánto tiempo lleva con estos síntomas?"
+      ],
+      "key_labs": [
+        "Test de H. pylori (antígeno en heces o urea en aliento)",
+        "Endoscopía digestiva alta con biopsia",
+        "Hemograma completo",
+        "Vitamina B12",
+        "Serología H. pylori"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Gastritis crónica",
+        "required_symptoms": [
+          "dolor epigástrico",
+          "náuseas"
+        ],
+        "required_labs": [
+          "Test de H. pylori",
+          "Endoscopía digestiva alta"
+        ],
+        "key_reasoning": "Confirmación histológica por biopsia endoscópica; H. pylori es la causa más común; descartar úlcera y neoplasia, evaluar necesidad de erradicación"
+      }
+    }
+  },
+  "patient_profile": {
+    "name": "Ana Pérez Rojas",
+    "age": 63,
+    "sex": "femenino",
+    "weight": 83,
+    "height": 168,
+    "backstory": "Mi nombre es Gloria, tengo 63 años y vengo porque desde hace varios meses siento una molestia aquí en la boca del estómago que me aparece sobre todo después de comer, a veces como un ardor que me sube y otras veces nada más es una pesadez que no se me quita en todo el día. He tomado antiácidos que compro en la farmacia y me alivian un rato, pero luego vuelve igual o peor. Le soy sincera, doctor, yo tomo bastante café durante el día porque trabajo todavía medio turno en una papelería, y además desde que me quedé viuda hace dos años como a deshoras y muchas veces pura comida rápida o muy condimentada. Mi mamá también sufría mucho del estómago, ella siempre andaba con sus pastillas para eso hasta que falleció."
+  },
+  "conversation": [],
+  "labs_requested": [],
+  "lab_results": {},
+  "diagnosis_submitted": false,
+  "score": null,
+  "student_diagnosis": null,
+  "student_reasoning": null,
+  "created_at": "2026-03-22T01:33:42.834166",
+  "completed_at": null,
+  "status": "active"
+}

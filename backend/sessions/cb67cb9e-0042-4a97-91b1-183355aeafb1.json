@@ -1,0 +1,89 @@
+{
+  "session_id": "cb67cb9e-0042-4a97-91b1-183355aeafb1",
+  "disease": {
+    "id": "celulitis_infecciosa",
+    "name": "Celulitis infecciosa",
+    "category": "Infectología",
+    "symptoms": [
+      "eritema (enrojecimiento) con bordes mal definidos que se expande",
+      "calor local intenso",
+      "edema (inflamación) de la zona afectada",
+      "dolor a la palpación",
+      "piel brillante y tensa",
+      "fiebre (38–39°C)",
+      "adenopatías regionales (ganglios inflamados)",
+      "puerta de entrada visible: herida, úlcera, picadura, fisura",
+      "linfangitis: línea roja que asciende desde la lesión"
+    ],
+    "typical_lab_results": {
+      "Leucocitos": "16,200/µL (leucocitosis con neutrofilia 82%)",
+      "PCR": "9.8 mg/dL (elevada)",
+      "VSG": "75 mm/h (elevada)",
+      "Cultivo de secreción de la herida": "Staphylococcus aureus sensible a meticilina (SAMS)",
+      "Hemocultivos (x2)": "Negativos (sin bacteriemia)",
+      "Glucemia": "108 mg/dL (descartar diabetes como factor predisponente)",
+      "Creatinina": "0.9 mg/dL (normal)",
+      "Hemograma completo": "Neutrofilia con bandas"
+    },
+    "differential_diagnoses": [
+      "Erisipela (bordes bien definidos, sobrelevados — Streptococcus)",
+      "Fascitis necrotizante (emergencia quirúrgica — crepitación, dolor severo desproporcionado)",
+      "Trombosis venosa profunda (TVP)",
+      "Dermatitis de contacto alérgica",
+      "Linfedema"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Cuándo comenzó el enrojecimiento y la inflamación? ¿Ha avanzado?",
+        "¿Tuvo alguna herida, picadura, rasguño o lesión en esa zona?",
+        "¿Tiene fiebre?",
+        "¿Tiene diabetes u otra enfermedad que afecte la inmunidad?",
+        "¿Los bordes del enrojecimiento están avanzando?",
+        "¿Tiene un dolor muy intenso que parece desproporcionado con lo que se ve? (alerta fascitis)",
+        "¿Ha recibido antibióticos recientemente?",
+        "¿Tiene mala circulación en las piernas o insuficiencia venosa?",
+        "¿Siente crujidos o crepitación en la zona afectada? (alerta gas — fascitis)"
+      ],
+      "key_labs": [
+        "Hemograma completo",
+        "PCR y VSG",
+        "Glucemia (descartar diabetes)",
+        "Cultivo de secreción si hay herida abierta",
+        "Hemocultivos si hay fiebre alta o sepsis",
+        "Ecografía de partes blandas (descartar absceso o fascitis)"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Celulitis infecciosa",
+        "required_symptoms": [
+          "eritema con bordes mal definidos",
+          "calor local",
+          "edema",
+          "fiebre"
+        ],
+        "required_labs": [
+          "Hemograma completo",
+          "PCR"
+        ],
+        "key_reasoning": "Diagnóstico clínico: eritema, calor, edema, dolor en tejido celular subcutáneo con fiebre; S. aureus y Streptococcus pyogenes son los más frecuentes; descartar fascitis necrotizante"
+      }
+    }
+  },
+  "patient_profile": {
+    "name": "Fernanda Pérez Mendoza",
+    "age": 63,
+    "sex": "femenino",
+    "weight": 49,
+    "height": 170,
+    "backstory": "Me llamo Carmen y vengo porque tengo una pierna que se me ha puesto muy fea desde hace unos tres días, está caliente, hinchada y roja, y me duele bastante al caminar, incluso me ha dado algo de fiebre por las noches. La verdad es que hace una semana me rasguñé con una esquina del jardín mientras podaba y no le di mucha importancia, solo me lavé con agua. Soy diabética desde hace como quince años y a veces no me cuido tanto como debería, como poco y he bajado bastante de peso últimamente. Mi madre también era diabética y tuvo problemas de circulación en las piernas toda su vida."
+  },
+  "conversation": [],
+  "labs_requested": [],
+  "lab_results": {},
+  "diagnosis_submitted": false,
+  "score": null,
+  "student_diagnosis": null,
+  "student_reasoning": null,
+  "created_at": "2026-03-22T00:43:14.174714",
+  "completed_at": null,
+  "status": "active"
+}

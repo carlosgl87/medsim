@@ -1,0 +1,69 @@
+# =============================================================================
+# MedSim Backend — Python Dependencies
+# =============================================================================
+# Install all packages with:
+#   pip install -r requirements.txt
+#
+# Packages are pinned to minor versions (e.g., fastapi>=0.111,<0.112) so that
+# patch-level bug fixes are picked up automatically, but breaking changes in
+# minor/major versions are blocked until explicitly updated here.
+#
+# To upgrade a specific package:
+#   pip install --upgrade fastapi
+# Then update the version pin below accordingly.
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# Web Framework
+# -----------------------------------------------------------------------------
+
+# FastAPI: modern, high-performance async web framework for Python.
+# Provides automatic OpenAPI docs (/docs), request validation via Pydantic,
+# and native async/await support compatible with Python's asyncio.
+# Analogy: like Flask but with built-in type checking, async support, and
+# auto-generated interactive API documentation.
+fastapi>=0.111,<0.113
+
+# Uvicorn: ASGI server that runs the FastAPI application.
+# "ASGI" (Asynchronous Server Gateway Interface) is the async successor to WSGI.
+# The [standard] extra installs optional performance dependencies:
+#   - uvloop:    fast event loop (replaces asyncio's default loop on Linux/Mac)
+#   - httptools: fast HTTP parser
+#   - websockets: WebSocket support
+# Usage: uvicorn main:app --reload
+uvicorn[standard]>=0.29,<0.31
+
+
+# -----------------------------------------------------------------------------
+# AI / Claude API
+# -----------------------------------------------------------------------------
+
+# Anthropic Python SDK: official client for the Claude API.
+# Provides both synchronous (Anthropic) and asynchronous (AsyncAnthropic) clients.
+# The async client is used in this project because FastAPI routes are async functions.
+# Handles authentication, retries, streaming, and all API communication.
+anthropic>=0.30,<0.35
+
+
+# -----------------------------------------------------------------------------
+# Configuration
+# -----------------------------------------------------------------------------
+
+# python-dotenv: loads environment variables from a .env file into os.environ.
+# Allows storing secrets (API keys) in a local .env file that is NOT committed
+# to version control, rather than hardcoding them in the source code.
+# Usage in code: from dotenv import load_dotenv; load_dotenv()
+python-dotenv>=1.0,<2.0
+
+
+# -----------------------------------------------------------------------------
+# Data Validation
+# -----------------------------------------------------------------------------
+
+# Pydantic: data validation and settings management using Python type annotations.
+# FastAPI uses Pydantic internally for request/response validation, but we list
+# it here explicitly to pin the version used for BaseModel in our request schemas.
+# v2 is a full rewrite with ~5-50x performance improvements over v1.
+# Note: FastAPI >=0.100 requires Pydantic v2.
+pydantic>=2.7,<3.0

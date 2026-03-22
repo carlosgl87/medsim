@@ -1,0 +1,182 @@
+{
+  "session_id": "6fb5229d-c993-4371-abb8-0562450cf3e4",
+  "disease": {
+    "id": "infeccion_urinaria",
+    "name": "Infección del tracto urinario (ITU)",
+    "category": "Infectología",
+    "symptoms": [
+      "disuria (ardor o dolor al orinar)",
+      "polaquiuria (orinar frecuente pero en poca cantidad)",
+      "urgencia miccional (necesidad imperiosa de orinar)",
+      "orina turbia, de mal olor o con sangre (hematuria)",
+      "dolor o presión suprapúbica",
+      "fiebre y escalofríos (sugiere pielonefritis)",
+      "dolor lumbar o en flanco (pielonefritis alta)",
+      "náuseas y vómitos (pielonefritis)"
+    ],
+    "typical_lab_results": {
+      "Examen de orina (sedimento)": "Leucocitos 3+, nitritos positivos, hematíes 2+, bacterias ++",
+      "Urocultivo": "Escherichia coli >100,000 UFC/mL (uropatógeno más común: 80%)",
+      "Antibiograma": "Sensible a: nitrofurantoína, fosfomicina, TMP-SMX. Resistente a: ampicilina",
+      "Leucocitos en sangre": "12,800/µL (leucocitosis moderada)",
+      "PCR": "3.2 mg/dL (elevada; normal: <1.0 mg/dL)",
+      "Creatinina": "0.9 mg/dL (normal — no hay compromiso renal)",
+      "Hemograma": "Neutrofilia (75%)",
+      "Ecografía renal y vesical": "Sin litiasis, sin obstrucción, vejiga con residuo postmiccional mínimo"
+    },
+    "differential_diagnoses": [
+      "Uretritis por infección de transmisión sexual (ITS)",
+      "Vaginitis o cervicitis (en mujeres)",
+      "Prostatitis aguda (en hombres)",
+      "Cálculo ureteral (cólico nefrítico)",
+      "Vejiga hiperactiva"
+    ],
+    "scoring_rubric": {
+      "key_questions": [
+        "¿Siente ardor o dolor al orinar?",
+        "¿Orina con más frecuencia de lo habitual pero en poca cantidad?",
+        "¿Siente necesidad urgente de orinar que no puede controlar?",
+        "¿Ha notado sangre en la orina?",
+        "¿Tiene dolor en la parte baja del abdomen o en la espalda/flancos?",
+        "¿Tiene fiebre o escalofríos? (indica compromiso renal)",
+        "¿Ha tenido relaciones sexuales recientes?",
+        "¿Ha tenido infecciones urinarias anteriormente? ¿Con qué frecuencia?",
+        "¿Está embarazada? (en mujeres)",
+        "¿Tiene diabetes, cálculos renales o malformaciones urinarias conocidas?"
+      ],
+      "key_labs": [
+        "Examen de orina completo (sedimento urinario)",
+        "Urocultivo con antibiograma",
+        "Hemograma completo",
+        "PCR",
+        "Creatinina",
+        "Ecografía renal y vesical"
+      ],
+      "correct_diagnosis_criteria": {
+        "diagnosis_name": "Infección del tracto urinario (ITU)",
+        "required_symptoms": [
+          "disuria",
+          "polaquiuria"
+        ],
+        "required_labs": [
+          "Examen de orina completo",
+          "Urocultivo con antibiograma"
+        ],
+        "key_reasoning": "Urocultivo ≥100,000 UFC/mL del uropatógeno + síntomas clínicos; distinguir ITU baja (cistitis) de alta (pielonefritis) por fiebre y dolor lumbar; guiar antibiótico según antibiograma"
+      }
+    }
+  },
+  "patient_profile": {
+    "name": "Daniela López García",
+    "age": 36,
+    "sex": "femenino",
+    "weight": 90,
+    "height": 171,
+    "backstory": "Llevo como tres días con una molestia muy incómoda cada vez que voy al baño, y siento que necesito ir a cada rato aunque casi no sale nada. Anoche me dio un poco de fiebre y un dolor raro en la parte baja de la barriga que no me dejó dormir bien. Mi mamá siempre tuvo problemas parecidos, sobre todo después de sus embarazos, y el doctor de ella le decía que tomara más agua, cosa que yo la verdad casi no hago porque paso todo el día sentada en la oficina y se me olvida. Vengo porque ya no aguanto la molestia y en el trabajo no me puedo estar parando al baño cada cinco minutos."
+  },
+  "conversation": [
+    {
+      "role": "user",
+      "content": "Siente ardor o dolor al orinar?"
+    },
+    {
+      "role": "assistant",
+      "content": "Sí doctor, me arde bastante cada vez que voy al baño, es como una quemazón muy fea que me dan ganas de llorar. Llevo así como tres días ya y cada vez está peor."
+    },
+    {
+      "role": "user",
+      "content": "el dolor es constante o solo al orinar?"
+    },
+    {
+      "role": "assistant",
+      "content": "El ardor fuerte es cuando orino, pero también tengo como una molestia ahí abajo en la barriga que es más constante, como una presión que no se me quita. Anoche fue peor y casi no pude dormir por eso."
+    },
+    {
+      "role": "user",
+      "content": "ha notado mal olor en su orina? o sangre?"
+    },
+    {
+      "role": "assistant",
+      "content": "Sí, la verdad la orina me sale como turbia y con un olor bien feo, más fuerte de lo normal. Y ayer me pareció ver como un poquito de sangre, pero no estoy segura, me asusté mucho la verdad."
+    },
+    {
+      "role": "user",
+      "content": "cuanto tuvo de fiebre? tomo algo para la fiebre? o se fue sola?"
+    },
+    {
+      "role": "assistant",
+      "content": "Pues no me la medí con termómetro porque no tengo uno en la casa, pero sí me sentí bien caliente anoche y con escalofríos. Me tomé una pastilla de paracetamol que tenía por ahí y como que bajó un poco, pero en la madrugada me volvió a dar."
+    },
+    {
+      "role": "user",
+      "content": "esta es primera vez que le pasa esto? o ha tenido alguna molestia anteriormente?"
+    },
+    {
+      "role": "assistant",
+      "content": "Es la primera vez que me pasa así tan fuerte. Mi mamá sí tenía seguido este tipo de problemas, pero a mí nunca me había dado algo así."
+    },
+    {
+      "role": "user",
+      "content": "cuanta agua al dia tomar aproximadamente? en litros?"
+    },
+    {
+      "role": "assistant",
+      "content": "Uy doctor, la verdad muy poquita, como un vaso o dos al día si mucho. Es que paso todo el día sentada en la oficina y se me olvida tomar agua, más bien tomo café o refresco."
+    }
+  ],
+  "labs_requested": [
+    "Examen de orina completo",
+    "Urocultivo",
+    "PCR",
+    "Hemograma completo",
+    "Hematocrito",
+    "Glucosa",
+    "Creatinina",
+    "Ácido úrico",
+    "Urea",
+    "Colesterol total",
+    "Triglicéridos"
+  ],
+  "lab_results": {
+    "Examen de orina completo": "Dentro de parámetros normales",
+    "Urocultivo": "Escherichia coli >100,000 UFC/mL (uropatógeno más común: 80%)",
+    "PCR": "3.2 mg/dL (elevada; normal: <1.0 mg/dL)",
+    "Hemograma completo": "Neutrofilia (75%)",
+    "Hematocrito": "Dentro de parámetros normales",
+    "Glucosa": "Dentro de parámetros normales",
+    "Creatinina": "0.9 mg/dL (normal — no hay compromiso renal)",
+    "Ácido úrico": "Dentro de parámetros normales",
+    "Urea": "Dentro de parámetros normales",
+    "Colesterol total": "Dentro de parámetros normales",
+    "Triglicéridos": "Dentro de parámetros normales"
+  },
+  "diagnosis_submitted": true,
+  "score": {
+    "score_breakdown": {
+      "history_taking": {
+        "score": 14,
+        "feedback": "El estudiante cubrió aspectos básicos como disuria, presencia de sangre/mal olor en orina, detalles de la fiebre y antecedentes de episodios previos. Sin embargo, omitió preguntas esenciales del interrogatorio de ITU: no preguntó sobre polaquiuria (frecuencia urinaria aumentada con poca cantidad), urgencia miccional, dolor suprapúbico o lumbar de forma directa, relaciones sexuales recientes (factor de riesgo importante), posibilidad de embarazo (crucial en mujeres por cambio de manejo), ni comorbilidades relevantes como diabetes o cálculos renales. La pregunta sobre ingesta de agua es complementaria pero no sustituye las preguntas clave faltantes. Se cubrieron aproximadamente 4 de 10 preguntas clave del rúbric."
+      },
+      "lab_selection": {
+        "score": 18,
+        "feedback": "Solicitó correctamente 5 de los 6 exámenes clave: examen de orina completo, urocultivo (aunque faltó especificar 'con antibiograma', lo cual es fundamental para guiar el tratamiento antibiótico), hemograma completo, PCR y creatinina. Omitió la ecografía renal y vesical, que es importante para descartar complicaciones estructurales. Por otro lado, solicitó varios exámenes innecesarios para el cuadro clínico (colesterol total, triglicéridos, ácido úrico), lo que refleja un enfoque poco dirigido y genera costos innecesarios. El hematocrito es redundante con el hemograma completo."
+      },
+      "diagnosis": {
+        "score": 25,
+        "feedback": "El diagnóstico de Infección del Tracto Urinario es correcto y coincide exactamente con la patología del caso simulado. Además, el estudiante intentó distinguir entre ITU baja (cistitis) e ITU alta (pielonefritis), lo cual demuestra un adecuado enfoque clasificatorio."
+      },
+      "reasoning": {
+        "score": 17,
+        "feedback": "El razonamiento integra adecuadamente los síntomas cardinales (disuria, polaquiuria, dolor suprapúbico, fiebre) y algunos hallazgos de laboratorio (PCR elevada, neutrofilia). Sin embargo, contiene un error conceptual importante: la creatinina normal NO descarta pielonefritis. La distinción entre cistitis y pielonefritis se basa en la presencia de fiebre alta (>38.5°C), dolor en flancos/lumbar y síntomas sistémicos, no en la creatinina (que refleja función renal, no infección del parénquima). Además, no mencionó los hallazgos del urocultivo ni del examen de orina (leucocituria, bacteriuria, nitritos), que son los pilares diagnósticos fundamentales de la ITU. Faltó mencionar el criterio de ≥100,000 UFC/mL y la importancia del antibiograma para guiar el tratamiento."
+      },
+      "overall_feedback": "El estudiante logra un diagnóstico correcto y demuestra conocimiento básico de la ITU, pero necesita mejorar significativamente en dos áreas: primero, realizar un interrogatorio más completo y sistemático que incluya factores de riesgo (actividad sexual, embarazo, comorbilidades) y todos los síntomas urinarios; segundo, fortalecer su razonamiento clínico evitando errores conceptuales como usar la creatinina para diferenciar cistitis de pielonefritis, y aprendiendo a integrar los hallazgos del urocultivo y sedimento urinario como pilares diagnósticos. También debe evitar solicitar exámenes de laboratorio no pertinentes al cuadro clínico."
+    },
+    "total_score": 74,
+    "correct_diagnosis": "Infección del tracto urinario (ITU)"
+  },
+  "student_diagnosis": "Infección del tracto urinario",
+  "student_reasoning": "La paciente presenta cuadro clínico compatible con ITU: disuria, \npolaquiuria, dolor suprapúbico y fiebre de 3 días de evolución.\n\nLos exámenes confirman el diagnóstico:\n- PCR elevada (3.2 mg/dL) confirma proceso infeccioso activo\n- Hemograma con neutrofilia (75%) indica respuesta inflamatoria \n  bacteriana\n- Creatinina normal descarta compromiso renal, por lo que \n  se trata de cistitis y no pielonefritis",
+  "created_at": "2026-03-22T00:34:44.476618",
+  "completed_at": "2026-03-22T00:42:32.981031",
+  "status": "completed"
+}
