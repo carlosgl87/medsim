@@ -115,8 +115,8 @@ function getScoreStyle(score) {
   }
   if (score >= 50) {
     return {
-      bg: 'bg-yellow-100', text: 'text-yellow-700', border: 'border-yellow-200',
-      ring: 'ring-yellow-200', label: 'Regular', barColor: 'bg-yellow-500',
+      bg: 'bg-[#FFF3CC]', text: 'text-[#1A1A1A]', border: 'border-[#FDBA30]',
+      ring: 'ring-[#FDBA30]', label: 'Regular', barColor: 'bg-[#FDBA30]',
     }
   }
   return {
@@ -194,7 +194,7 @@ function InitialsAvatar({ name, size = 'lg' }) {
     // rounded-full: círculo perfecto
     // flex-shrink-0: evita que se comprima en layouts flex
     // select-none: evita que las iniciales se seleccionen al hacer clic
-    <div className={`${sizeClasses} rounded-full bg-navy-800 text-white font-bold
+    <div className={`${sizeClasses} rounded-full bg-[#1A1A1A] text-white font-bold
                      flex items-center justify-center flex-shrink-0 select-none`}>
       {initials}
     </div>
@@ -259,7 +259,7 @@ function SessionCard({ session, onSelect }) {
 
           <div className="min-w-0">
             {/* truncate: recorta el texto con "..." si es demasiado largo para el contenedor */}
-            <h3 className="font-bold text-navy-800 truncate text-base leading-tight">
+            <h3 className="font-bold text-[#1A1A1A] truncate text-base leading-tight">
               {session.patient_name}
             </h3>
             {/* Categoría de la enfermedad en badge pequeño */}
@@ -292,7 +292,7 @@ function SessionCard({ session, onSelect }) {
 
         {/* Diagnóstico correcto */}
         <div className="flex items-start gap-2">
-          <span className="text-teal-500 flex-shrink-0 font-bold text-xs mt-0.5">DX✓</span>
+          <span className="text-[#FDBA30] flex-shrink-0 font-bold text-xs mt-0.5">DX✓</span>
           <span className="text-gray-600 leading-tight">{session.correct_diagnosis || '—'}</span>
         </div>
 
@@ -308,7 +308,7 @@ function SessionCard({ session, onSelect }) {
       </div>
 
       {/* Indicador de "Ver detalle →" que aparece al hover */}
-      <div className="mt-4 text-xs text-teal-500 font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+      <div className="mt-4 text-xs text-[#FDBA30] font-medium opacity-0 group-hover:opacity-100 transition-opacity">
         Ver detalle completo →
       </div>
     </div>
@@ -397,7 +397,7 @@ function SessionModal({ detail, isLoading, onClose }) {
       >
         {/* === HEADER DEL MODAL === */}
         <div className="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex items-center justify-between z-10">
-          <h2 className="font-bold text-navy-800 text-lg">Detalle de Sesión</h2>
+          <h2 className="font-bold text-[#1A1A1A] text-lg">Detalle de Sesión</h2>
           {/* Botón cerrar: × en esquina superior derecha */}
           <button
             onClick={onClose}
@@ -415,7 +415,7 @@ function SessionModal({ detail, isLoading, onClose }) {
           {/* Estado de carga mientras se obtiene el detalle completo */}
           {isLoading && (
             <div className="flex flex-col items-center justify-center py-20 gap-3">
-              <div className="w-10 h-10 border-4 border-teal-500 border-t-transparent rounded-full animate-spin" />
+              <div className="w-10 h-10 border-4 border-[#FDBA30] border-t-transparent rounded-full animate-spin" />
               <p className="text-gray-400 text-sm">Cargando detalle de la sesión…</p>
             </div>
           )}
@@ -432,7 +432,7 @@ function SessionModal({ detail, isLoading, onClose }) {
                   <div className="flex items-center gap-3 mb-4">
                     <InitialsAvatar name={detail.patient_profile?.name} />
                     <div>
-                      <div className="font-bold text-navy-800 text-base">
+                      <div className="font-bold text-[#1A1A1A] text-base">
                         {detail.patient_profile?.name}
                       </div>
                       <span className="badge-info capitalize">{detail.patient_profile?.sex}</span>
@@ -447,7 +447,7 @@ function SessionModal({ detail, isLoading, onClose }) {
                       { value: `${detail.patient_profile?.height} cm`, label: 'Talla' },
                     ].map(({ value, label }) => (
                       <div key={label} className="bg-gray-50 rounded-lg p-2">
-                        <div className="font-semibold text-navy-800 text-sm">{value}</div>
+                        <div className="font-semibold text-[#1A1A1A] text-sm">{value}</div>
                         <div className="text-xs text-gray-400">{label}</div>
                       </div>
                     ))}
@@ -491,8 +491,8 @@ function SessionModal({ detail, isLoading, onClose }) {
                       <div className={
                         `max-w-[78%] px-3 py-2 rounded-2xl text-sm leading-relaxed ` +
                         (msg.role === 'user'
-                          ? 'bg-navy-800 text-white rounded-br-none'
-                          : 'bg-white text-gray-800 rounded-bl-none shadow-sm border border-gray-100')
+                          ? 'bg-[#FDBA30] text-[#1A1A1A] rounded-br-none'
+                          : 'bg-[#F0F0F0] text-gray-800 rounded-bl-none')
                       }>
                         {msg.content}
                       </div>
@@ -514,7 +514,7 @@ function SessionModal({ detail, isLoading, onClose }) {
                   <div className="card !p-0 overflow-hidden">
                     <table className="w-full text-sm">
                       <thead>
-                        <tr className="bg-navy-800 text-white">
+                        <tr className="bg-[#1A1A1A] text-white">
                           <th className="text-left px-4 py-2.5 font-semibold">Examen</th>
                           <th className="text-left px-4 py-2.5 font-semibold">Resultado</th>
                           <th className="px-3 py-2.5 text-center font-semibold w-10">—</th>
@@ -551,11 +551,11 @@ function SessionModal({ detail, isLoading, onClose }) {
                 <div className="space-y-3">
                   {/* Comparativa: correcto vs. propuesto */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div className="bg-teal-50 border border-teal-200 rounded-xl p-3">
-                      <div className="text-xs text-teal-500 font-semibold uppercase tracking-wide mb-1">
+                    <div className="bg-[#FFF3CC] border border-[#FDBA30] rounded-xl p-3">
+                      <div className="text-xs text-[#1A1A1A] font-semibold uppercase tracking-wide mb-1">
                         Diagnóstico Correcto
                       </div>
-                      <div className="font-bold text-teal-800 text-sm">
+                      <div className="font-bold text-[#1A1A1A] text-sm">
                         {detail.score?.correct_diagnosis || detail.disease?.name || '—'}
                       </div>
                     </div>
@@ -621,9 +621,9 @@ function SessionModal({ detail, isLoading, onClose }) {
                       const catData = detail.score.score_breakdown?.[key] || { score: 0, feedback: '—' }
                       const pct = (catData.score / 25) * 100
                       const barColor =
-                        catData.score >= 20 ? 'bg-teal-500' :
-                        catData.score >= 15 ? 'bg-blue-500' :
-                        catData.score >= 10 ? 'bg-yellow-500' : 'bg-red-400'
+                        catData.score >= 20 ? 'bg-green-500' :
+                        catData.score >= 15 ? 'bg-[#FDBA30]' :
+                        catData.score >= 10 ? 'bg-orange-400' : 'bg-red-400'
 
                       return (
                         <div key={key}>
@@ -631,7 +631,7 @@ function SessionModal({ detail, isLoading, onClose }) {
                             <span className="text-sm font-medium text-gray-700">
                               {icon} {label}
                             </span>
-                            <span className="text-sm font-bold text-navy-800">
+                            <span className="text-sm font-bold text-[#1A1A1A]">
                               {catData.score}
                               <span className="text-gray-400 font-normal">/25</span>
                             </span>
@@ -652,9 +652,9 @@ function SessionModal({ detail, isLoading, onClose }) {
 
                   {/* Feedback general */}
                   {detail.score.score_breakdown?.overall_feedback && (
-                    <div className="card bg-blue-50 border border-blue-100 mt-4">
-                      <h4 className="font-bold text-navy-800 mb-2 text-sm">💡 Retroalimentación General</h4>
-                      <p className="text-sm text-blue-800 leading-relaxed">
+                    <div className="card bg-[#FFF3CC] border border-[#FDBA30]/40 mt-4">
+                      <h4 className="font-bold text-[#1A1A1A] mb-2 text-sm">💡 Retroalimentación General</h4>
+                      <p className="text-sm text-[#555555] leading-relaxed">
                         {detail.score.score_breakdown.overall_feedback}
                       </p>
                     </div>
@@ -683,7 +683,7 @@ function SessionModal({ detail, isLoading, onClose }) {
  */
 function SectionTitle({ icon, title }) {
   return (
-    <h3 className="flex items-center gap-2 font-bold text-navy-800 mb-3 text-base">
+    <h3 className="flex items-center gap-2 font-bold text-[#1A1A1A] mb-3 text-base">
       <span>{icon}</span>
       {title}
     </h3>
@@ -799,7 +799,7 @@ function History() {
       {/* ── ENCABEZADO DE LA PÁGINA ──────────────────────────────────────── */}
       <div className="flex items-start justify-between mb-6 gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-navy-800 mb-1">
+          <h1 className="text-2xl font-bold text-[#1A1A1A] mb-1">
             Historial de Simulaciones
           </h1>
           <p className="text-gray-500 text-sm">
@@ -826,7 +826,7 @@ function History() {
       {/* ── ESTADO DE CARGA INICIAL ───────────────────────────────────────── */}
       {isLoading && (
         <div className="flex flex-col items-center justify-center py-20 gap-3">
-          <div className="w-10 h-10 border-4 border-teal-500 border-t-transparent rounded-full animate-spin" />
+          <div className="w-10 h-10 border-4 border-[#FDBA30] border-t-transparent rounded-full animate-spin" />
           <p className="text-gray-400 text-sm">Cargando historial…</p>
         </div>
       )}
@@ -951,7 +951,7 @@ function QuickStats({ sessions }) {
       {stats.map(stat => (
         <div key={stat.label} className="card !p-4 text-center">
           <div className="text-2xl mb-1">{stat.icon}</div>
-          <div className="font-bold text-navy-800 text-xl">{stat.value}</div>
+          <div className="font-bold text-[#1A1A1A] text-xl">{stat.value}</div>
           <div className="text-xs text-gray-400">{stat.sub}</div>
         </div>
       ))}

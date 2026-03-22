@@ -27,34 +27,13 @@ export default {
     // estándar (que ya incluye blue-500, teal-400, etc.)
     extend: {
       colors: {
-        // Navy blue: color primario para navbar, botones principales, headers
-        // Analogía: es nuestro "color corporativo" del sistema de diseño
-        navy: {
-          50:  '#f0f4ff',
-          100: '#e0e9ff',
-          200: '#c7d5ff',
-          300: '#a5b8ff',
-          400: '#7a91ff',
-          500: '#4f66f7',
-          600: '#3347e0',
-          700: '#2635c5',
-          800: '#1e2a9e',  // Azul navy oscuro — navbar principal
-          900: '#1a2480',  // Azul navy más oscuro — hover states
-          950: '#111660',
-        },
-        // Teal: color secundario/acento para elementos interactivos, links activos
-        // Evoca colores médicos/hospitalarios (similar al verde quirófano)
-        teal: {
-          50:  '#f0fdfa',
-          100: '#ccfbf1',
-          200: '#99f6e4',
-          300: '#5eead4',
-          400: '#2dd4bf',
-          500: '#14b8a6',  // Teal principal — botones secundarios, accents
-          600: '#0d9488',  // Teal oscuro — hover states
-          700: '#0f766e',
-          800: '#115e59',
-          900: '#134e4a',
+        // Paleta de marca UPN (Universidad Privada del Norte)
+        upn: {
+          gold:        '#FDBA30',  // Dorado principal — botones, estados activos
+          'gold-dark': '#E5A520',  // Dorado oscuro — hover de botones
+          'gold-light':'#FFF3CC',  // Dorado muy claro — fondos de tarjetas activas
+          dark:        '#1A1A1A',  // Negro UPN — navbar, footer, headers de tabla
+          darker:      '#111111',  // Negro más oscuro — hover de elementos oscuros
         },
       },
       // fontFamily: agrega fuentes personalizadas

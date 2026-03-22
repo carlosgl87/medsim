@@ -178,10 +178,10 @@ function Stepper({ currentStage }) {
                      text-sm font-bold transition-all duration-300 ` +
                     // Clases condicionales: cambian según el estado del paso
                     (isCompleted
-                      ? 'bg-teal-500 text-white'        // Completado: teal sólido
+                      ? 'bg-[#1A1A1A] text-white'              // Completado: negro UPN
                       : isCurrent
-                        ? 'bg-navy-800 text-white ring-4 ring-navy-200'  // Actual: navy con halo
-                        : 'bg-gray-100 text-gray-400 border-2 border-gray-200') // Futuro: gris
+                        ? 'bg-[#FDBA30] text-[#1A1A1A] ring-4 ring-[#FDBA30]/30'  // Actual: dorado UPN
+                        : 'bg-gray-100 text-gray-400 border-2 border-gray-200')    // Futuro: gris
                   }
                 >
                   {/* Muestra ✓ si completado, o el número si no */}
@@ -192,7 +192,7 @@ function Stepper({ currentStage }) {
                 <span
                   className={
                     `hidden sm:block text-xs font-medium ` +
-                    (isCurrent ? 'text-navy-800' : isCompleted ? 'text-teal-600' : 'text-gray-400')
+                    (isCurrent ? 'text-[#FDBA30]' : isCompleted ? 'text-[#1A1A1A]' : 'text-gray-400')
                   }
                 >
                   {label}
@@ -207,7 +207,7 @@ function Stepper({ currentStage }) {
                     // h-0.5: línea delgada de 2px
                     `flex-1 h-0.5 mx-2 transition-colors duration-300 ` +
                     // Teal si el paso ya fue completado, gris si no
-                    (stepNumber < currentStage ? 'bg-teal-400' : 'bg-gray-200')
+                    (stepNumber < currentStage ? 'bg-[#FDBA30]' : 'bg-gray-200')
                   }
                 />
               )}
@@ -231,9 +231,8 @@ function Stepper({ currentStage }) {
  */
 function PatientCard({ patient }) {
   return (
-    // Tarjeta con borde teal en la izquierda — identidad visual del paciente
-    // border-l-4: borde izquierdo de 4px de grosor
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 border-l-4 border-l-teal-500 p-4 mb-4">
+    // Tarjeta con borde dorado UPN en la izquierda — identidad visual del paciente
+    <div className="bg-white rounded-xl shadow-sm border border-[#E0E0E0] border-l-4 border-l-[#FDBA30] p-4 mb-4">
 
       {/* Encabezado: avatar + nombre + badge de sexo */}
       <div className="flex items-center gap-3 mb-3">
@@ -242,7 +241,7 @@ function PatientCard({ patient }) {
           {patient.sex === 'masculino' ? '👨' : '👩'}
         </span>
         <div>
-          <h2 className="font-bold text-navy-800 text-lg leading-tight">{patient.name}</h2>
+          <h2 className="font-bold text-[#1A1A1A] text-lg leading-tight">{patient.name}</h2>
           {/* Capitalizar primera letra del sexo para mostrarlo */}
           <span className="badge-info capitalize">{patient.sex}</span>
         </div>
@@ -257,7 +256,7 @@ function PatientCard({ patient }) {
           { value: `${patient.height} cm`, label: 'Talla' },
         ].map(({ value, label }) => (
           <div key={label} className="bg-gray-50 rounded-lg p-2">
-            <div className="font-semibold text-navy-800 text-sm">{value}</div>
+            <div className="font-semibold text-[#1A1A1A] text-sm">{value}</div>
             <div className="text-xs text-gray-400">{label}</div>
           </div>
         ))}
@@ -641,10 +640,10 @@ function NewPatient() {
                   className={
                     `max-w-[75%] px-4 py-2.5 rounded-2xl text-sm leading-relaxed ` +
                     (msg.role === 'user'
-                      // Mensaje del estudiante: navy oscuro, borde inferior derecho cuadrado
-                      ? 'bg-navy-800 text-white rounded-br-none'
-                      // Mensaje del paciente: gris claro, borde inferior izquierdo cuadrado
-                      : 'bg-gray-100 text-gray-800 rounded-bl-none')
+                      // Mensaje del estudiante: dorado UPN, texto oscuro
+                      ? 'bg-[#FDBA30] text-[#1A1A1A] rounded-br-none'
+                      // Mensaje del paciente: gris claro
+                      : 'bg-[#F0F0F0] text-gray-800 rounded-bl-none')
                   }
                 >
                   {msg.content}
@@ -691,7 +690,7 @@ function NewPatient() {
               disabled={isSendingMessage}
               // resize-none: evita que el usuario redimensione el textarea manualmente
               className="flex-1 border border-gray-200 rounded-xl px-4 py-2.5 text-sm
-                         focus:outline-none focus:ring-2 focus:ring-teal-400
+                         focus:outline-none focus:ring-2 focus:ring-[#FDBA30]
                          resize-none disabled:opacity-50"
             />
             <button
@@ -730,7 +729,7 @@ function NewPatient() {
 
         {/* Encabezado con título e instrucciones */}
         <div className="mb-4">
-          <h2 className="text-xl font-bold text-navy-800 mb-1">
+          <h2 className="text-xl font-bold text-[#1A1A1A] mb-1">
             Solicitar Exámenes de Laboratorio
           </h2>
           <p className="text-gray-500 text-sm">
@@ -748,7 +747,7 @@ function NewPatient() {
             onChange={e => setSearchTerm(e.target.value)}
             placeholder="Buscar examen…"
             className="w-full pl-9 pr-4 py-2.5 border border-gray-200 rounded-xl text-sm
-                       focus:outline-none focus:ring-2 focus:ring-teal-400"
+                       focus:outline-none focus:ring-2 focus:ring-[#FDBA30]"
           />
         </div>
 
@@ -774,7 +773,7 @@ function NewPatient() {
           {Object.entries(filteredCatalog).map(([category, tests]) => (
             <div key={category} className="card !p-4">
               {/* Encabezado de categoría */}
-              <h3 className="font-semibold text-navy-800 text-sm mb-2 uppercase tracking-wide">
+              <h3 className="font-semibold text-[#1A1A1A] text-sm mb-2 uppercase tracking-wide">
                 {category}
               </h3>
               {/* Grid de checkboxes: 2 columnas en pantallas medianas */}
@@ -790,7 +789,7 @@ function NewPatient() {
                         `flex items-center gap-2 p-2 rounded-lg cursor-pointer
                          transition-colors text-sm ` +
                         (isSelected
-                          ? 'bg-teal-50 text-teal-700'  // Fondo teal cuando seleccionado
+                          ? 'bg-[#FFF3CC] text-[#1A1A1A]'  // Fondo dorado claro cuando seleccionado
                           : 'hover:bg-gray-50 text-gray-700')
                       }
                     >
@@ -801,8 +800,7 @@ function NewPatient() {
                         type="checkbox"
                         checked={isSelected}
                         onChange={() => toggleTest(test)}
-                        // accent-teal-500: colorea el checkbox nativo con teal
-                        className="accent-teal-500 w-4 h-4 flex-shrink-0"
+                        className="accent-[#FDBA30] w-4 h-4 flex-shrink-0"
                       />
                       {test}
                     </label>
@@ -855,7 +853,7 @@ function NewPatient() {
     return (
       <div className="max-w-3xl mx-auto">
         <div className="mb-4">
-          <h2 className="text-xl font-bold text-navy-800 mb-1">Resultados de Laboratorio</h2>
+          <h2 className="text-xl font-bold text-[#1A1A1A] mb-1">Resultados de Laboratorio</h2>
           <p className="text-gray-500 text-sm">
             Los valores marcados en rojo/naranja indican resultados anormales.
           </p>
@@ -867,7 +865,7 @@ function NewPatient() {
               sean "sobrepasados" por el contenido de la tabla */}
           <table className="w-full text-sm">
             <thead>
-              <tr className="bg-navy-800 text-white">
+              <tr className="bg-[#1A1A1A] text-white">
                 <th className="text-left px-5 py-3 font-semibold">Examen</th>
                 <th className="text-left px-5 py-3 font-semibold">Resultado</th>
                 <th className="px-3 py-3 font-semibold text-center">Estado</th>
@@ -949,7 +947,7 @@ function NewPatient() {
     return (
       <div className="max-w-2xl mx-auto">
         <div className="mb-4">
-          <h2 className="text-xl font-bold text-navy-800 mb-1">Diagnóstico Final</h2>
+          <h2 className="text-xl font-bold text-[#1A1A1A] mb-1">Diagnóstico Final</h2>
           <p className="text-gray-500 text-sm">
             Basándote en la entrevista y los resultados de laboratorio, ¿cuál es tu diagnóstico?
           </p>
@@ -968,7 +966,7 @@ function NewPatient() {
               onChange={e => setDiagnosis(e.target.value)}
               placeholder="Ej: Diabetes mellitus tipo 2, Neumonía bacteriana…"
               className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm
-                         focus:outline-none focus:ring-2 focus:ring-teal-400"
+                         focus:outline-none focus:ring-2 focus:ring-[#FDBA30]"
             />
           </div>
 
@@ -988,7 +986,7 @@ function NewPatient() {
               }
               rows={7}
               className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm
-                         focus:outline-none focus:ring-2 focus:ring-teal-400 resize-none"
+                         focus:outline-none focus:ring-2 focus:ring-[#FDBA30] resize-none"
             />
             {/* Contador de caracteres — indicador sutil de longitud del razonamiento */}
             <div className="text-right text-xs text-gray-300 mt-1">
@@ -1062,15 +1060,15 @@ function NewPatient() {
 
         {/* === TARJETA DE DIAGNÓSTICO: correcto vs. propuesto === */}
         <div className="card">
-          <h2 className="text-xl font-bold text-navy-800 mb-4">Resultado de la Simulación</h2>
+          <h2 className="text-xl font-bold text-[#1A1A1A] mb-4">Resultado de la Simulación</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Diagnóstico correcto */}
-            <div className="bg-teal-50 border border-teal-200 rounded-xl p-4">
-              <div className="text-xs text-teal-500 font-semibold uppercase tracking-wide mb-1">
+            <div className="bg-[#FFF3CC] border border-[#FDBA30] rounded-xl p-4">
+              <div className="text-xs text-[#1A1A1A] font-semibold uppercase tracking-wide mb-1">
                 Diagnóstico Correcto
               </div>
-              <div className="font-bold text-teal-800 text-base">{correct_diagnosis}</div>
+              <div className="font-bold text-[#1A1A1A] text-base">{correct_diagnosis}</div>
             </div>
 
             {/* Diagnóstico propuesto por el estudiante */}
@@ -1107,7 +1105,7 @@ function NewPatient() {
 
         {/* === DESGLOSE POR CATEGORÍAS === */}
         <div className="card">
-          <h3 className="font-bold text-navy-800 mb-4">Desglose por Categoría</h3>
+          <h3 className="font-bold text-[#1A1A1A] mb-4">Desglose por Categoría</h3>
           <div className="space-y-5">
             {categories.map(({ key, label, icon }) => {
               // score_breakdown puede no tener la clave si hubo error
@@ -1116,9 +1114,9 @@ function NewPatient() {
 
               // Color de la barra según desempeño en esa categoría
               const barColor =
-                catData.score >= 20 ? 'bg-teal-500' :
-                catData.score >= 15 ? 'bg-blue-500' :
-                catData.score >= 10 ? 'bg-yellow-500' :
+                catData.score >= 20 ? 'bg-green-500' :
+                catData.score >= 15 ? 'bg-[#FDBA30]' :
+                catData.score >= 10 ? 'bg-orange-400' :
                                       'bg-red-400'
 
               return (
@@ -1128,7 +1126,7 @@ function NewPatient() {
                     <span className="text-sm font-medium text-gray-700">
                       {icon} {label}
                     </span>
-                    <span className="text-sm font-bold text-navy-800">
+                    <span className="text-sm font-bold text-[#1A1A1A]">
                       {catData.score}
                       <span className="text-gray-400 font-normal">/25</span>
                     </span>
@@ -1154,9 +1152,9 @@ function NewPatient() {
 
         {/* === FEEDBACK GENERAL === */}
         {feedback && (
-          <div className="card bg-blue-50 border border-blue-100">
-            <h3 className="font-bold text-navy-800 mb-2">💡 Retroalimentación General</h3>
-            <p className="text-sm text-blue-800 leading-relaxed">{feedback}</p>
+          <div className="card bg-[#FFF3CC] border border-[#FDBA30]/40">
+            <h3 className="font-bold text-[#1A1A1A] mb-2">💡 Retroalimentación General</h3>
+            <p className="text-sm text-[#555555] leading-relaxed">{feedback}</p>
           </div>
         )}
 
@@ -1193,7 +1191,7 @@ function NewPatient() {
     return (
       <div className="flex flex-col items-center justify-center py-24 gap-4">
         {/* Spinner de carga usando animación CSS de Tailwind */}
-        <div className="w-12 h-12 border-4 border-teal-500 border-t-transparent rounded-full animate-spin" />
+        <div className="w-12 h-12 border-4 border-[#FDBA30] border-t-transparent rounded-full animate-spin" />
         <p className="text-gray-500 text-sm">Generando paciente virtual…</p>
         <p className="text-gray-400 text-xs">
           MedSim está creando un caso clínico personalizado para ti.

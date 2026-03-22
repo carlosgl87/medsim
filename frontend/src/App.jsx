@@ -89,7 +89,7 @@ function Navbar() {
     //   shadow-md:   sombra media para separar visualmente el navbar del contenido
     //   sticky top-0: el navbar se queda fijo en la parte superior al hacer scroll
     //   z-50: z-index alto para que el navbar esté sobre el contenido al hacer scroll
-    <nav className="bg-navy-800 shadow-md sticky top-0 z-50">
+    <nav className="bg-[#1A1A1A] shadow-md sticky top-0 z-50">
 
       {/* Contenedor interno con ancho máximo y centrado horizontal.
           max-w-6xl: limita el ancho a ~72rem para no estirar el contenido en pantallas grandes.
@@ -99,22 +99,22 @@ function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
 
         {/* === LOGO / NOMBRE DE LA APP === */}
-        {/* flex items-center: alinea el icono y el texto verticalmente en el centro.
-            gap-2: espacio de 0.5rem entre el icono y el texto. */}
-        <div className="flex items-center gap-2">
-          {/* Icono de estetoscopio como emoji — simple y reconocible */}
-          <span className="text-2xl" aria-label="estetoscopio">🩺</span>
+        <div className="flex items-center gap-3">
+          {/* Logo UPN */}
+          <img
+            src="/logo_upn.svg"
+            alt="UPN"
+            className="h-8 w-auto"
+            onError={e => { e.target.style.display = 'none' }}
+          />
 
-          {/* Nombre de la app: blanco, negrita, tamaño grande.
-              tracking-tight: reduce ligeramente el espaciado entre letras (más compacto y moderno). */}
+          {/* Nombre de la app */}
           <span className="text-white font-bold text-xl tracking-tight">
             MedSim
           </span>
 
-          {/* Subtítulo descriptivo: visible solo en pantallas medianas (sm:block).
-              En móvil se oculta (hidden) para no saturar el navbar pequeño.
-              border-l: línea divisoria izquierda como separador visual. */}
-          <span className="hidden sm:block text-navy-200 text-sm border-l border-navy-600 pl-2 ml-1">
+          {/* Subtítulo: visible en pantallas medianas */}
+          <span className="hidden sm:block text-gray-400 text-sm border-l border-gray-600 pl-3 ml-1">
             Simulador Clínico
           </span>
         </div>
@@ -136,18 +136,12 @@ function Navbar() {
           <NavLink
             to="/new-patient"
             className={({ isActive }) =>
-              // Clases base: siempre aplicadas (texto blanco, padding, borde redondeado,
-              //              fuente media, transición suave de colores)
-              `text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors duration-200 ` +
-              // Clases condicionales: diferentes según si el link está activo o no
-              // isActive=true: fondo teal (página actual resaltada)
-              // isActive=false: hover con fondo navy ligeramente más claro
+              `px-4 py-2 rounded-lg font-medium text-sm transition-colors duration-200 ` +
               (isActive
-                ? 'bg-teal-500 text-white'           // Estado activo: teal sólido
-                : 'hover:bg-navy-700 text-navy-100')  // Estado inactivo: hover sutil
+                ? 'bg-[#FDBA30] text-[#1A1A1A]'       // Estado activo: dorado UPN
+                : 'hover:bg-[#333333] text-gray-300')   // Estado inactivo: hover sutil
             }
           >
-            {/* Icono + texto del link. El + es una convención visual para "nuevo" */}
             <span className="mr-1.5">＋</span>
             Nuevo Paciente
           </NavLink>
@@ -155,10 +149,10 @@ function Navbar() {
           <NavLink
             to="/history"
             className={({ isActive }) =>
-              `text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors duration-200 ` +
+              `px-4 py-2 rounded-lg font-medium text-sm transition-colors duration-200 ` +
               (isActive
-                ? 'bg-teal-500 text-white'
-                : 'hover:bg-navy-700 text-navy-100')
+                ? 'bg-[#FDBA30] text-[#1A1A1A]'
+                : 'hover:bg-[#333333] text-gray-300')
             }
           >
             {/* Icono de lista para "Historia de casos" */}
@@ -256,12 +250,12 @@ function App() {
             mt-auto: empuja el footer al fondo si el contenido es corto
                      (funciona en conjunto con flex-col en el div padre).
             border-t: línea divisoria superior sutil. */}
-        <footer className="border-t border-gray-200 bg-white py-4 px-6 mt-auto">
+        <footer className="border-t border-gray-700 bg-[#1A1A1A] py-4 px-6 mt-auto">
           <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
 
             {/* Texto izquierdo: créditos de la app */}
             <p className="text-xs text-gray-400">
-              MedSim — Simulador Clínico
+              MedSim — Simulador Clínico · Universidad Privada del Norte
             </p>
 
           </div>

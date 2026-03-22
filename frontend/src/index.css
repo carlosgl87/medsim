@@ -47,35 +47,35 @@
  * varias operaciones frecuentes en una sola llamada.
  */
 @layer components {
-  /* Botón primario: navy oscuro con hover effect */
+  /* Botón primario UPN: dorado con texto oscuro */
   .btn-primary {
-    @apply bg-navy-800 text-white font-medium px-4 py-2 rounded-lg
-           hover:bg-navy-900 active:scale-95
+    @apply bg-upn-gold text-upn-dark font-bold px-4 py-2 rounded-lg
+           hover:bg-upn-gold-dark active:scale-95
            transition-all duration-200 ease-in-out
            disabled:opacity-50 disabled:cursor-not-allowed;
   }
 
-  /* Botón secundario: contorno teal */
+  /* Botón secundario UPN: contorno dorado */
   .btn-secondary {
-    @apply border-2 border-teal-500 text-teal-600 font-medium px-4 py-2 rounded-lg
-           hover:bg-teal-50 active:scale-95
+    @apply border-2 border-upn-gold text-upn-gold font-medium px-4 py-2 rounded-lg
+           hover:bg-upn-gold-light active:scale-95
            transition-all duration-200 ease-in-out
            disabled:opacity-50 disabled:cursor-not-allowed;
   }
 
-  /* Tarjeta (card): contenedor blanco con sombra sutil — patrón muy común en UIs médicas */
+  /* Tarjeta (card): contenedor blanco con borde sutil */
   .card {
-    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6;
+    @apply bg-white rounded-xl shadow-sm border border-[#E0E0E0] p-6;
   }
 
-  /* Badge de estado: pastilla colorida para indicar estados (activo, completado, etc.) */
+  /* Badge de estado: pastilla colorida para indicar estados */
   .badge-success {
     @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
-           bg-teal-100 text-teal-800;
+           bg-green-100 text-green-800;
   }
 
   .badge-info {
     @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
-           bg-blue-100 text-blue-800;
+           bg-upn-gold-light text-upn-dark;
   }
 }
